@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Мария Шапиро](https://up.htmlacademy.ru/htmlcss/23/user/360005).
-* Наставник: [Александр Тубольцев] (https://htmlacademy.ru/profile/id86460).
+* Наставник: [Александр Тубольцев](https://htmlacademy.ru/profile/id86460).
 
 ---
 
