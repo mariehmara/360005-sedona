@@ -21,6 +21,64 @@
     </nav>
   </header>
   <main class="container">
+    <section class="choose_hotel">
+      <form action="//echo.htmlacademy.ru" method="get">
+        <div class="first_column">
+          <h2 class="infrastructure">Инфраструктура:</h2>
+          <ul class="infrastructure_list">
+            <li>
+              <label>
+                <input type="checkbox" class="checkbox" name="pool" checked />
+                Бассейн</label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" class="checkbox" name="parking" />
+                Парковка
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" class="checkbox" name="wi-fi" />
+                Wi-Fi</label>
+            </li>
+          </ul>
+        </div>
+        <div class="second_column">
+          <h2 class="apartment">Тип жилья:</h2>
+          <ul class="apartment_list">
+            <li>
+              <label>
+                <input type="checkbox" class="checkbox" name="hotel" checked />
+                Гостиница</label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" class="checkbox" name="motel" checked />
+                Мотель</label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" class="checkbox" name="apartments" checked />
+                Апартаменты</label>
+            </li>
+          </ul>
+        </div>
+        <div class="third_column">
+          <h2>Стоимость в сутки (Р):</h2>
+          <p class="from_price">
+            от 0
+          </p>
+          <p class="to_price">
+            До 3000
+          </p>
+          <input type="range" class="price_range" name="price_range" min="0" max="3000" step="300" />
+          <p class="show_results">
+            <input type="submit" value="Показать" />
+          </p>
+        </div>
+      </form>
+    </section>
     <h1 class="visually_hidden">Выбор отелей</h1>
     <section class="hotel_list">
       <ul class="hotels_list">
