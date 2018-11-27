@@ -23,8 +23,10 @@
   <main class="container">
     <section class="choose_hotel">
       <form action="//echo.htmlacademy.ru" method="get">
-        <div class="first_column">
-          <h2 class="infrastructure">Инфраструктура:</h2>
+        <fieldset class="first">
+          <legend>
+            Инфраструктура:
+          </legend>
           <ul class="infrastructure_list">
             <li>
               <label>
@@ -43,9 +45,9 @@
                 Wi-Fi</label>
             </li>
           </ul>
-        </div>
-        <div class="second_column">
-          <h2 class="apartment">Тип жилья:</h2>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
           <ul class="apartment_list">
             <li>
               <label>
@@ -63,20 +65,23 @@
                 Апартаменты</label>
             </li>
           </ul>
-        </div>
-        <div class="third_column">
-          <h2>Стоимость в сутки (Р):</h2>
-          <p class="from_price">
-            от 0
-          </p>
-          <p class="to_price">
-            До 3000
-          </p>
-          <input type="range" class="price_range" name="price_range" min="0" max="3000" step="300" />
-          <p class="show_results">
+        </fieldset>
+        <fieldset class="third_column">
+          <legend>Стоимость в сутки (Р):</legend>
+          <label>от 0<input type="text" name="from">
+          </label>
+          <label>До 3000<input type="text" name="to">
+          </label>
+          <div class="range">
+            <button class="button_range" type="button">from
+            </button>
+            <button class="button_range" type="button">to
+            </button>
+          </div>
+          <div class="show_results">
             <input type="submit" value="Показать" />
-          </p>
-        </div>
+          </div>
+        </fieldset>
       </form>
     </section>
     <h1 class="visually_hidden">Выбор отелей</h1>
