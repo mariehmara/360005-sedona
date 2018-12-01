@@ -1,0 +1,39 @@
+body {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+  background-color: #ffffff;
+  background-image: url("../img/main-back.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main_navigation {
+  background-color: #ffffff;
+}
+
+.nav {
+  list-style: none;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.nav a {
+  color: #000000;
+}
+
+.nav a:hover,
+.nav a:focus {
+  color: #81b3d2;
+}
+
+.nav a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
