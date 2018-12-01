@@ -21,10 +21,71 @@
     </nav>
   </header>
   <main class="container">
+    <section class="choose_hotel">
+      <form action="//echo.htmlacademy.ru" method="get">
+        <fieldset class="first">
+          <legend>
+            Инфраструктура:
+          </legend>
+          <ul class="infrastructure_list">
+            <li>
+              <label>
+                <input type="checkbox" class="checkbox" name="pool" checked />
+                Бассейн</label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" class="checkbox" name="parking" />
+                Парковка
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" class="checkbox" name="wi-fi" />
+                Wi-Fi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <ul class="apartment_list">
+            <li>
+              <label>
+                <input type="checkbox" class="checkbox" name="hotel" checked />
+                Гостиница</label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" class="checkbox" name="motel" checked />
+                Мотель</label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" class="checkbox" name="apartments" checked />
+                Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="third_column">
+          <legend>Стоимость в сутки (Р):</legend>
+          <input type="text" name="from" value="от 0">
+          <input type="text" name="to" value="До 3000">
+          <div class="range">
+            <button class="button_range" type="button">from
+            </button>
+            <button class="button_range" type="button">to
+            </button>
+          </div>
+          <div class="show_results">
+            <input type="submit" value="Показать" />
+          </div>
+        </fieldset>
+      </form>
+    </section>
     <h1 class="visually_hidden">Выбор отелей</h1>
     <section class="hotel_list">
       <ul class="hotels_list">
-        <li "hotel_item">
+        <li class="hotel_item">
           <h2 class="hotel_name">
             <a href="hotel_page1.html">Amara Resort &amp; Spa</a>
           </h2>
@@ -37,14 +98,14 @@
             <span class="visually-hidden">четыре звезды</span>
           </p>
           <p class="rate">Рейтинг: 8,5</p>
-          <a href="#">
-            <p class="button">Подробнее</p>
+          <a class="button more" href="#">
+            Подробнее
           </a>
-          <a href="#">
-            <p class="button">Забронировать</p>
+          <a class="button book" href="#">
+            Забронировать
           </a>
         </li>
-        <li "hotel_item">
+        <li class="hotel_item">
           <h2 class="hotel_name"><a href="hotel_page_2.html">Desert Quail Inn</a></h2>
           <p class="hotel_description">
             <span>Мотель</span>
@@ -55,14 +116,14 @@
             <span class="visually-hidden">три звезды</span>
           </p>
           <p class="rate">Рейтинг: 8,9</p>
-          <a href="#">
-            <p class="button">Подробнее</p>
+          <a class="button more" href="#">
+            Подробнее
           </a>
-          <a href="#">
-            <p class="button">Забронировать</p>
+          <a class="button book" href="#">
+            Забронировать
           </a>
         </li>
-        <li "hotel_item">
+        <li class="hotel_item">
           <h2 class="hotel_name">
             <a href="hotel_page3.html">Villas at Poco Diablo
             </a>
@@ -77,11 +138,11 @@
             <span class="visually-hidden">две звезды</span>
           </p>
           <p class="rate">Рейтинг: 9,2</p>
-          <a href="#">
-            <p class="button">Подробнее</p>
+          <a class="button more" href="#">
+            Подробнее
           </a>
-          <a href="#">
-            <p class="button">Забронировать</p>
+          <a class="button book" href="#">
+            Забронировать
           </a>
         </li>
       </ul>
