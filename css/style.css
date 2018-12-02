@@ -136,14 +136,17 @@ a {
 }
 
 .main_photo {
+  position: relative;
   background-image: url("../img/main-back.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   display: block;
   width: 1200px;
+  overflow: hidden;
 }
 
 .main_photo:after {
+  position: absolute;
   content: "";
   display: block;
   width: 1200px;
