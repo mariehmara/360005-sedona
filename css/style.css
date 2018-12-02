@@ -1,12 +1,15 @@
 body {
+  margin: 0px;
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
   color: #333333;
   background-color: #ffffff;
   background-image: url("../img/main-back.jpg");
-  background-position: 0 0;
+  background-position: top center;
   background-repeat: no-repeat;
 }
 
@@ -36,4 +39,82 @@ a {
 
 .nav a:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.main_photo {
+  display: block;
+}
+
+.main_photo:after {
+  content: "";
+  display: block;
+  width: 1200px;
+  height: 60px;
+  background-image: url("../img/intro-mask.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.description {
+  background-color: #ffffff;
+}
+
+.sedona-info {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.form_find_hotel {
+  vertical-align: middle;
+  text-align: center;
+  box-shadow: 0 0 10px 2px;
+}
+
+.find-hotel {
+  background-color: #ffffff;
+}
+
+.interested {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.choose_dates {
+  line-height: 24px;
+  text-align: center;
+}
+
+.hotel_search_head {
+  padding: 10px;
+  box-shadow: 0 0 10px 2px #000000;
+  background-color: #766357;
+  font-size: 21px;
+  color: #ffffff;
+}
+
+.find_hotel p {
+  font-weight: bold;
+}
+
+.find_hotel input {
+  display: inline-block;
+  position: relative;
+  width: 346px;
+  height: 30px;
+  padding: 2px;
+  background-color: #ebebeb;
+}
+
+.in_date {
+  background-image: url("../img/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.find_hotel input:hover {
+  background-color: #ebebeb;
 }
