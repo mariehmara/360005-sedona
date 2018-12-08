@@ -21,12 +21,11 @@ a {
 }
 
 /* inner_page of sedona >>> */
-.inner_page {
+.choose_hotel {
   background-image: url("../img/main-blurred.jpg");
-  background-position: top center;
+  background-position: center;
   background-repeat: no-repeat;
-  width: 768px;
-  height: 512px;
+  background-color: #000000;
 }
 
 .choose_hotel {
@@ -321,17 +320,17 @@ a {
 }
 
 /* flex elements part 1 */
-.main_navigation.wrapper ul {
+.nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 1200px;
   padding: 0;
   margin: 0;
 }
 
-.main_navigation.wrapper li {
+.nav li {
   width: 240px;
 }
 
@@ -365,5 +364,84 @@ a {
 }
 
 .form_wrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 55px;
+}
+
+.input_human input {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.hotels_list {
+  list-style: none;
+}
+
+.inner_page h1 {
+  font-size: 21px;
+}
+
+.found_wrapper p:nth-child(3) {
+  color: #81b3d2;
+}
+
+.found_wrapper p:nth-child(4),
+.found_wrapper p:nth-child(5) {
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: underline;
+}
+
+.choose_hotel form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 1200px;
+  min-height: 250px;
+}
+
+.choose_hotel .first_column {
+  margin-left: 70px;
+}
+
+.choose_hotel .third_column {
+  align-self: flex-start;
+  margin-left: 360px;
+  margin-right: 70px;
+}
+
+.found_wrapper {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 70px;
+}
+
+.found_wrapper p {
+  padding-left: 45px;
+}
+
+.hotel_item {
+  display: flex;
+  align-items: stretch;
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+.rate_wrapper {
+  order: 2;
+  margin-left: auto;
+}
+
+.hotel_wrapper {
+  margin-left: 25px;
+}
+
+.hotel_description {
+  text-align: left;
+}
+
+.hotel_name {
+  text-align: left;
 }

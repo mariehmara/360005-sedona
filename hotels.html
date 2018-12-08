@@ -15,18 +15,20 @@
       <ul class="nav">
         <li><a href="info.html">Информация</a></li>
         <li><a href="photo_video.html">Фото и видео</a></li>
+        <li>
+          <a class="logo" href="index.html">
+            <img src="img/logo-sedona.svg" width="140" height="72" alt="лого Sedona">
+          </a>
+        </li>
         <li><a href="map.html">Карта штата</a></li>
         <li><span class="current">Гостиницы</span> </li>
       </ul>
-      <a class="logo" href="index.html">
-        <img src="img/logo-sedona.svg" width="140" height="72" alt="лого Sedona">
-      </a>
     </nav>
   </header>
   <main class="container">
     <section class="choose_hotel">
       <form action="//echo.htmlacademy.ru" method="get">
-        <fieldset class="first">
+        <fieldset class="first_column">
           <legend>
             Инфраструктура:
           </legend>
@@ -49,7 +51,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="second_column">
           <legend>Тип жилья:</legend>
           <ul class="apartment_list">
             <li>
@@ -85,68 +87,96 @@
         </fieldset>
       </form>
     </section>
-    <h1 class="visually_hidden">Выбор отелей</h1>
-    <section class="hotel_list">
+    <div class="found_wrapper">
+      <h1>Найдено: 3</h1>
+      <p>
+        Сортировка:
+      </p>
+      <p>
+        По цене
+      </p>
+      <p>
+        По типу
+      </p>
+      <p>
+        По рейтингу
+      </p>
+    </div>
+
+    <section class="hotels">
       <ul class="hotels_list">
         <li class="hotel_item">
-          <h2 class="hotel_name">
-            <a href="hotel_page1.html">Amara Resort &amp; Spa</a>
-          </h2>
-          <p class="hotel_description"><span>Гостиница</span>
-            <span>От 4000 Р.</span></p>
-          <a href="hotel-page1.html">
-            <img src="img/mini-preview-1.jpg" width="135" height="90" alt="фото отеля">
+          <img src="img/mini-preview-1.jpg" width="135" height="90" alt="фото отеля">
           </a>
-          <p class="stars_1">
-            <span class="visually_hidden">четыре звезды</span>
-          </p>
-          <p class="rate">Рейтинг: 8,5</p>
-          <a class="button more" href="#">
-            Подробнее
-          </a>
-          <a class="button book" href="#">
-            Забронировать
-          </a>
+          <div class="rate_wrapper">
+            <p class="stars_1">
+              <span class="visually_hidden">четыре звезды</span>
+            </p>
+            <p class="rate">Рейтинг: 8,5</p>
+          </div>
+          <div class="hotel_wrapper">
+            <h2 class="hotel_name">
+              <a href="hotel_page1.html">Amara Resort &amp; Spa</a>
+            </h2>
+            <p class="hotel_description"><span>Гостиница</span>
+              <span>От 4000 Р.</span></p>
+            <a href="hotel-page1.html">
+              <a class="button more" href="#">
+                Подробнее
+              </a>
+              <a class="button book" href="#">
+                Забронировать
+              </a>
+          </div>
         </li>
         <li class="hotel_item">
-          <h2 class="hotel_name"><a href="hotel_page_2.html">Desert Quail Inn</a></h2>
-          <p class="hotel_description">
-            <span>Мотель</span>
-            <span>От 3000 Р.</span>
-          </p>
           <a href="hotel-page2.html"><img src="img/mini-preview-2.jpg" width="135" height="90" alt="фото отеля"></a>
-          <p class="stars_2">
-            <span class="visually_hidden">три звезды</span>
-          </p>
-          <p class="rate">Рейтинг: 8,9</p>
-          <a class="button more" href="#">
-            Подробнее
-          </a>
-          <a class="button book" href="#">
-            Забронировать
-          </a>
+          <div class="rate_wrapper">
+            <p class="stars_2">
+              <span class="visually_hidden">три звезды</span>
+            </p>
+            <p class="rate">Рейтинг: 8,9</p>
+          </div>
+          <div class="hotel_wrapper">
+            <h2 class="hotel_name"><a href="hotel_page_2.html">Desert Quail Inn</a></h2>
+            <p class="hotel_description">
+              <span>Мотель</span>
+              <span>От 3000 Р.</span>
+            </p>
+            <a class="button more" href="#">
+              Подробнее
+            </a>
+            <a class="button book" href="#">
+              Забронировать
+            </a>
+          </div>
         </li>
         <li class="hotel_item">
-          <h2 class="hotel_name">
-            <a href="hotel_page3.html">Villas at Poco Diablo
-            </a>
-          </h2>
-          <p class="hotel_description">
-            <span>Апартаменты</span>
-            <span>От 2000 Р.</span>
-          </p>
           <a href="hotel-page3.html">
-            <img src="img/mini-preview-3.jpg" width="135" height="90" alt="фото отеля"></a>
-          <p class="stars_3">
-            <span class="visually_hidden">две звезды</span>
-          </p>
-          <p class="rate">Рейтинг: 9,2</p>
-          <a class="button more" href="#">
-            Подробнее
+            <img src="img/mini-preview-3.jpg" width="135" height="90" alt="фото отеля">
           </a>
-          <a class="button book" href="#">
-            Забронировать
-          </a>
+          <div class="rate_wrapper">
+            <p class="stars_3">
+              <span class="visually_hidden">две звезды</span>
+            </p>
+            <p class="rate">Рейтинг: 9,2</p>
+          </div>
+          <div class="hotel_wrapper">
+            <h2 class="hotel_name">
+              <a href="hotel_page3.html">Villas at Poco Diablo
+              </a>
+            </h2>
+            <p class="hotel_description">
+              <span>Апартаменты</span>
+              <span>От 2000 Р.</span>
+            </p>
+            <a class="button more" href="#">
+              Подробнее
+            </a>
+            <a class="button book" href="#">
+              Забронировать
+            </a>
+          </div>
         </li>
       </ul>
     </section>
