@@ -8,6 +8,7 @@ body {
   font-weight: 400;
   color: #333333;
   background-color: #ffffff;
+  width: 1200px;
 }
 
 a {
@@ -153,7 +154,7 @@ a {
   height: 60px;
   background-image: url("../img/intro-mask.svg");
   background-repeat: no-repeat;
-  bottom: -30px;
+  bottom: 0;
   left: 0;
   right: 0;
 }
@@ -162,21 +163,24 @@ a {
   background-color: #ffffff;
 }
 
-.sedona-info {
+.sedona_info {
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
 }
 
 .form_find_hotel {
-  vertical-align: middle;
-  text-align: center;
-  box-shadow: 0 0 10px -2px;
-  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 568px;
+  margin-top: 55px;
+  margin-left: 316px;
+  padding: 0;
+  box-shadow: 0 0 10px -2px;
 }
 
-.find-hotel {
+.find_hotel {
   background-color: #ffffff;
 }
 
@@ -193,9 +197,9 @@ a {
 .search_head {
   text-transform: uppercase;
   font-weight: bold;
-  width: 548px;
+  width: 568px;
   height: 66px;
-  padding: 10px;
+  padding: 0;
   margin: 0;
   background-color: #766357;
   font-size: 21px;
@@ -215,12 +219,9 @@ a {
 
 .find_hotel p {
   font-weight: bold;
-  padding: 0;
 }
 
 .find_hotel input {
-  display: inline-block;
-  position: relative;
   border-style: none;
   padding: 2px 2px;
   background-color: #f2f2f2;
@@ -278,7 +279,11 @@ a {
 
 .input_human input {
   height: 38px;
-  width: auto;
+  width: 124px;
+}
+
+.input_human p {
+  width: 225px;
 }
 
 .social_buttons {
@@ -313,4 +318,52 @@ a {
 
 .created_by {
   float: right;
+}
+
+/* flex elements part 1 */
+.main_navigation.wrapper ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  padding: 0;
+  margin: 0;
+}
+
+.main_navigation.wrapper li {
+  width: 240px;
+}
+
+.main_photo {
+  min-height: 500px;
+}
+
+.main_photo img {
+  margin-top: 60px;
+}
+
+.main_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 1200px;
+  min-height: 120px;
+}
+
+.form_wrap p {
+  margin: 0;
+}
+
+.form_wrap .input {
+  margin-bottom: 29px;
+}
+
+.form_wrap .find {
+  margin-top: 55px;
+}
+
+.form_wrap {
+  padding: 55px;
 }

@@ -11,16 +11,16 @@
 
 <body>
   <header class="main_header">
-    <nav class="main_navigation">
+    <nav class="main_navigation wrapper">
       <ul class="nav">
         <li><a href="info.html">Информация</a></li>
         <li><a href="photo_video.html">Фото и видео</a></li>
+        <a class="logo">
+          <img src="img/logo-sedona.svg" width="140" height="72" alt="лого Sedona">
+        </a>
         <li><a href="map.html">Карта штата</a></li>
         <li><a href="hotels.html">Гостиницы</a></li>
       </ul>
-      <a class="logo">
-        <img src="img/logo-sedona.svg" width="140" height="72" alt="лого Sedona">
-      </a>
     </nav>
   </header>
   <main class="container">
@@ -30,37 +30,40 @@
     </div>
     <section class="description">
       <h2 class="sedona_info">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <p class="great_sedona">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </section>
     <section class="find_hotel">
       <h2 class="interested">Заинтересовались?</h2>
       <p class="choose_dates">
         Укажите предполагаемые даты поездки, <br /> и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
+
       <form action="//echo.htmlacademy.ru" method="post" class="form_find_hotel">
         <button type="button" name="search_head" class="search_head">ПОИСК ГОСТИНИЦЫ В седоне</button>
+        <div class="form_wrap">
+          <p class="input input_date">
+            <label for="in_date">Дата заезда:</label>
+            <input type="text" class="in_date" name="in_date" id="in_date" placeholder="24 апреля 2017" required />
+          </p>
+          <p class="input input_date">
+            <label for="out_date">Дата выезда:</label>
+            <input type="text" class="out_date" name="out_date" id="out_date" placeholder="4 июля 2017" required />
+          </p>
+          <p class="input input_human">
+            <label for="adults">Взрослые:</label>
+            <input type="number" name="adults" id="adults">
+          </p>
+          <p class="input input_human">
+            <label for="kids">Дети:</label>
+            <input type="number" name="kids" id="kids">
+          </p>
 
-        <p class="input_date">
-          <label for="in_date">Дата заезда:</label>
-          <input type="text" class="in_date" name="in_date" id="in_date" placeholder="24 апреля 2017" required />
-        </p>
-        <p class="input_date">
-          <label for="out_date">Дата выезда:</label>
-          <input type="text" class="out_date" name="out_date" id="out_date" placeholder="4 июля 2017" required />
-        </p>
-        <p class="input_human">
-          <label for="adults">Взрослые:</label>
-          <input type="number" name="adults" id="adults">
-        </p>
-        <p class="input_human">
-          <label for="kids">Дети:</label>
-          <input type="number" name="kids" id="kids">
-        </p>
-        <p class="find">
+          <p class="find">
 
-          <button type="submit" name="find" />НАЙТИ</button>
+            <button type="submit" name="find" />НАЙТИ</button>
 
-        </p>
+          </p>
+        </div>
       </form>
     </section>
   </main>
