@@ -8,7 +8,12 @@ body {
   font-weight: 400;
   color: #333333;
   background-color: #ffffff;
+}
+
+.main_container {
   width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px -2px #000000;
 }
 
 a {
@@ -153,9 +158,8 @@ a {
   height: 60px;
   background-image: url("../img/intro-mask.svg");
   background-repeat: no-repeat;
+  background-position: bottom;
   bottom: 0;
-  left: 0;
-  right: 0;
 }
 
 .description {
@@ -328,9 +332,10 @@ a {
   width: 1200px;
   padding: 0;
   margin: 0;
+  height: 56px;
 }
 
-.nav li {
+.nav a {
   width: 240px;
 }
 
@@ -444,4 +449,16 @@ a {
 
 .hotel_name {
   text-align: left;
+}
+
+.main_header .logo {
+  position: absolute;
+  left: 50%;
+  margin-left: -70px;
+  top: 0;
+  z-index: 1;
+}
+
+.hotel_preview {
+  order: -1;
 }

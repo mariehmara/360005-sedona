@@ -10,209 +10,213 @@
 </head>
 
 <body class="inner_page">
-  <header class="main_header">
-    <nav class="main_navigation">
-      <ul class="nav">
-        <li><a href="info.html">Информация</a></li>
-        <li><a href="photo_video.html">Фото и видео</a></li>
-        <li>
-          <a class="logo" href="index.html">
-            <img src="img/logo-sedona.svg" width="140" height="72" alt="лого Sedona">
-          </a>
-        </li>
-        <li><a href="map.html">Карта штата</a></li>
-        <li><span class="current">Гостиницы</span> </li>
-      </ul>
-    </nav>
-  </header>
-  <main class="container">
-    <section class="choose_hotel">
-      <form action="//echo.htmlacademy.ru" method="get">
-        <fieldset class="first_column">
-          <legend>
-            Инфраструктура:
-          </legend>
-          <ul class="infrastructure_list">
-            <li>
-              <label>
-                <input type="checkbox" class="checkbox" name="pool" checked />
-                Бассейн</label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" class="checkbox" name="parking" />
-                Парковка
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" class="checkbox" name="wi-fi" />
-                Wi-Fi</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="second_column">
-          <legend>Тип жилья:</legend>
-          <ul class="apartment_list">
-            <li>
-              <label>
-                <input type="checkbox" class="checkbox" name="hotel" checked />
-                Гостиница</label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" class="checkbox" name="motel" checked />
-                Мотель</label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" class="checkbox" name="apartments" checked />
-                Апартаменты</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="third_column">
-          <legend>Стоимость в сутки (Р):</legend>
-          <input type="text" name="from" value="от 0">
-          <input type="text" name="to" value="До 3000">
-          <div class="range">
-            <button class="button_range" type="button">from
-            </button>
-            <button class="button_range" type="button">to
-            </button>
-          </div>
-          <div class="show_results">
-            <input type="submit" value="Показать" />
-          </div>
-        </fieldset>
-      </form>
-    </section>
-    <div class="found_wrapper">
-      <h1>Найдено: 3</h1>
-      <p>
-        Сортировка:
-      </p>
-      <p>
-        По цене
-      </p>
-      <p>
-        По типу
-      </p>
-      <p>
-        По рейтингу
-      </p>
-    </div>
+  <div class="main_container">
+    <header class="main_header">
+      <nav class="main_navigation">
+        <ul class="nav">
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="photo_video.html">Фото и видео</a></li>
+          <li><a href="map.html">Карта штата</a></li>
+          <li><span class="current">Гостиницы</span> </li>
+        </ul>
+      </nav>
+      <a class="logo" href="index.html">
+        <img src="img/logo-sedona.svg" width="140" height="72" alt="лого Sedona">
+      </a>
+    </header>
+    <main class="container">
+      <section class="choose_hotel">
+        <form action="//echo.htmlacademy.ru" method="get">
+          <fieldset class="first_column">
+            <legend>
+              Инфраструктура:
+            </legend>
+            <ul class="infrastructure_list">
+              <li>
+                <label>
+                  <input type="checkbox" class="checkbox" name="pool" checked />
+                  Бассейн</label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" class="checkbox" name="parking" />
+                  Парковка
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" class="checkbox" name="wi-fi" />
+                  Wi-Fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="second_column">
+            <legend>Тип жилья:</legend>
+            <ul class="apartment_list">
+              <li>
+                <label>
+                  <input type="checkbox" class="checkbox" name="hotel" checked />
+                  Гостиница</label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" class="checkbox" name="motel" checked />
+                  Мотель</label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" class="checkbox" name="apartments" checked />
+                  Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="third_column">
+            <legend>Стоимость в сутки (Р):</legend>
+            <input type="text" name="from" value="от 0">
+            <input type="text" name="to" value="До 3000">
+            <div class="range">
+              <button class="button_range" type="button">from
+              </button>
+              <button class="button_range" type="button">to
+              </button>
+            </div>
+            <div class="show_results">
+              <input type="submit" value="Показать" />
+            </div>
+          </fieldset>
+        </form>
+      </section>
+      <div class="found_wrapper">
+        <h1>Найдено: 3</h1>
+        <p>
+          Сортировка:
+        </p>
+        <p>
+          По цене
+        </p>
+        <p>
+          По типу
+        </p>
+        <p>
+          По рейтингу
+        </p>
+      </div>
 
-    <section class="hotels">
-      <ul class="hotels_list">
-        <li class="hotel_item">
-          <img src="img/mini-preview-1.jpg" width="135" height="90" alt="фото отеля">
-          </a>
-          <div class="rate_wrapper">
-            <p class="stars_1">
-              <span class="visually_hidden">четыре звезды</span>
-            </p>
-            <p class="rate">Рейтинг: 8,5</p>
-          </div>
-          <div class="hotel_wrapper">
-            <h2 class="hotel_name">
-              <a href="hotel_page1.html">Amara Resort &amp; Spa</a>
-            </h2>
-            <p class="hotel_description"><span>Гостиница</span>
-              <span>От 4000 Р.</span></p>
-            <a href="hotel-page1.html">
+      <section class="hotels">
+        <ul class="hotels_list">
+          <li class="hotel_item">
+            <div class="rate_wrapper">
+              <p class="stars_1">
+                <span class="visually_hidden">четыре звезды</span>
+              </p>
+              <p class="rate">Рейтинг: 8,5</p>
+            </div>
+            <div class="hotel_wrapper">
+              <h2 class="hotel_name">
+                <a href="hotel_page1.html">Amara Resort &amp; Spa</a>
+              </h2>
+              <p class="hotel_description"><span>Гостиница</span>
+                <span>От 4000 Р.</span></p>
+              <a href="hotel-page1.html">
+                <a class="button more" href="#">
+                  Подробнее
+                </a>
+                <a class="button book" href="#">
+                  Забронировать
+                </a>
+            </div>
+            <a href="hotel-page1.html" class="hotel_preview">
+              <img src="img/mini-preview-1.jpg" width="135" height="90" alt="фото отеля">
+            </a>
+          </li>
+          <li class="hotel_item">
+            <div class="rate_wrapper">
+              <p class="stars_2">
+                <span class="visually_hidden">три звезды</span>
+              </p>
+              <p class="rate">Рейтинг: 8,9</p>
+            </div>
+            <div class="hotel_wrapper">
+              <h2 class="hotel_name"><a href="hotel_page_2.html">Desert Quail Inn</a></h2>
+              <p class="hotel_description">
+                <span>Мотель</span>
+                <span>От 3000 Р.</span>
+              </p>
               <a class="button more" href="#">
                 Подробнее
               </a>
               <a class="button book" href="#">
                 Забронировать
               </a>
-          </div>
-        </li>
-        <li class="hotel_item">
-          <a href="hotel-page2.html"><img src="img/mini-preview-2.jpg" width="135" height="90" alt="фото отеля"></a>
-          <div class="rate_wrapper">
-            <p class="stars_2">
-              <span class="visually_hidden">три звезды</span>
-            </p>
-            <p class="rate">Рейтинг: 8,9</p>
-          </div>
-          <div class="hotel_wrapper">
-            <h2 class="hotel_name"><a href="hotel_page_2.html">Desert Quail Inn</a></h2>
-            <p class="hotel_description">
-              <span>Мотель</span>
-              <span>От 3000 Р.</span>
-            </p>
-            <a class="button more" href="#">
-              Подробнее
+            </div>
+            <a href="hotel-page2.html" class="hotel_preview">
+              <img src="img/mini-preview-2.jpg" width="135" height="90" alt="фото отеля">
             </a>
-            <a class="button book" href="#">
-              Забронировать
-            </a>
-          </div>
-        </li>
-        <li class="hotel_item">
-          <a href="hotel-page3.html">
-            <img src="img/mini-preview-3.jpg" width="135" height="90" alt="фото отеля">
-          </a>
-          <div class="rate_wrapper">
-            <p class="stars_3">
-              <span class="visually_hidden">две звезды</span>
-            </p>
-            <p class="rate">Рейтинг: 9,2</p>
-          </div>
-          <div class="hotel_wrapper">
-            <h2 class="hotel_name">
-              <a href="hotel_page3.html">Villas at Poco Diablo
+          </li>
+          <li class="hotel_item">
+            <div class="rate_wrapper">
+              <p class="stars_3">
+                <span class="visually_hidden">две звезды</span>
+              </p>
+              <p class="rate">Рейтинг: 9,2</p>
+            </div>
+            <div class="hotel_wrapper">
+              <h2 class="hotel_name">
+                <a href="hotel_page3.html">Villas at Poco Diablo
+                </a>
+              </h2>
+              <p class="hotel_description">
+                <span>Апартаменты</span>
+                <span>От 2000 Р.</span>
+              </p>
+              <a class="button more" href="#">
+                Подробнее
               </a>
-            </h2>
-            <p class="hotel_description">
-              <span>Апартаменты</span>
-              <span>От 2000 Р.</span>
-            </p>
-            <a class="button more" href="#">
-              Подробнее
+              <a class="button book" href="#">
+                Забронировать
+              </a>
+            </div>
+            <a href="hotel-page3.html" class="hotel_preview">
+              <img src="img/mini-preview-3.jpg" width="135" height="90" alt="фото отеля">
             </a>
-            <a class="button book" href="#">
-              Забронировать
-            </a>
-          </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="main_footer">
+      <p class="hash_tag">
+        #visitSEDONA
+      </p>
+      <ul class="social_buttons">
+        <li>
+          <a href="//twitter.com/sedona">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
+              <path d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z" />
+            </svg>
+          </a>
+        </li>
+        <li><a href="//facebook.com/sedona">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
+              <path d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" />
+            </svg>
+          </a>
+        </li>
+        <li><a href="//youtube.com/sedona">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
+              <path d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z" />
+            </svg>
+          </a>
         </li>
       </ul>
-    </section>
-  </main>
-  <footer class="main_footer">
-    <p class="hash_tag">
-      #visitSEDONA
-    </p>
-    <ul class="social_buttons">
-      <li>
-        <a href="//twitter.com/sedona">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
-            <path d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z" />
-          </svg>
+      <section class="created_by">
+        <p class="creators">Website by</p>
+        <a href="//htmlacademy.ru">
+          <img src="img/logo-htmlacademy.svg" alt="Переход на сайт htmlacademy.ru" width="115" height="41">
         </a>
-      </li>
-      <li><a href="//facebook.com/sedona">
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
-            <path d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" />
-          </svg>
-        </a>
-      </li>
-      <li><a href="//youtube.com/sedona">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
-            <path d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z" />
-          </svg>
-        </a>
-      </li>
-    </ul>
-    <section class="created_by">
-      <p class="creators">Website by</p>
-      <a href="//htmlacademy.ru">
-        <img src="img/logo-htmlacademy.svg" alt="Переход на сайт htmlacademy.ru" width="115" height="41">
-      </a>
-    </section>
-  </footer>
+      </section>
+    </footer>
+
+  </div>
 </body>
 
 </html>
