@@ -143,7 +143,7 @@ a {
 .main_photo {
   position: relative;
   background-image: url("../img/main-back.jpg");
-  background-position: top center;
+  background-position: top;
   background-repeat: no-repeat;
   display: block;
   width: 1200px;
@@ -178,9 +178,10 @@ a {
   flex-wrap: wrap;
   width: 568px;
   margin-top: 55px;
-  margin-left: 316px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
-  box-shadow: 0 0 10px -2px;
+  box-shadow: 0 0 15px 0px rgba(0, 1, 1, 0.2);
 }
 
 .find_hotel {
@@ -229,6 +230,7 @@ a {
   padding: 2px 2px;
   background-color: #f2f2f2;
   outline: none;
+  box-sizing: border-box;
 }
 
 .input_date input {
