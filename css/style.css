@@ -335,8 +335,27 @@ a {
   height: 56px;
 }
 
-.nav a {
-  width: 240px;
+
+.nav li {
+  flex-basis: 25%;
+}
+
+.nav li:nth-child(3),
+ .nav li:nth-child(4){
+  text-align: right;
+}
+
+ .nav li:nth-child(4){
+  padding-right: 72px;
+}
+
+.nav li:first-child {
+    padding-left: 72px;
+}
+
+.nav li:first-child,
+.nav li:nth-child(2) {
+    text-align: left;
 }
 
 .main_photo {
