@@ -76,10 +76,14 @@ a {
 }
 
 .rate {
+  margin: 0;
+  padding:0;
   width: 110px;
   height: 27px;
   background-color: #f2f2f2;
   color: #666666;
+  vertical-align: middle;
+  line-height: 27px;
 }
 
 .hotel_description span {
@@ -87,6 +91,8 @@ a {
 }
 
 .stars_1 {
+  margin: 0;
+  padding: 0;
   width: 70px;
   height: 17px;
   background-image: url("../img/star.svg");
@@ -94,6 +100,8 @@ a {
 }
 
 .stars_2 {
+  margin: 0;
+  padding: 0;
   width: 55px;
   height: 17px;
   background-image: url("../img/star.svg");
@@ -101,15 +109,12 @@ a {
 }
 
 .stars_3 {
+  margin: 0;
+  padding: 0;
   width: 35px;
   height: 17px;
   background-image: url("../img/star.svg");
   background-repeat: repeat;
-}
-
-/*end of inner page */
-.main_navigation {
-  background-color: #ffffff;
 }
 
 .hotel_name a:hover, .hotel_name a:focus {
@@ -119,6 +124,25 @@ a {
 .hotel_name a:active {
   color: rgba(0, 0, 0, 0.5);
 }
+
+.hotel_name {
+  margin-top: 0;
+}
+
+.rate_wrapper {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:flex-start;
+}
+/*end of inner page */
+
+.main_navigation {
+  background-color: #ffffff;
+}
+
 
 .nav {
   list-style: none;
