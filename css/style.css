@@ -226,7 +226,7 @@ a {
 }
 
 .find_hotel input {
-  border-style: none;
+  border: 2px solid transparent;
   padding: 2px 2px;
   background-color: #f2f2f2;
   outline: none;
@@ -254,7 +254,7 @@ a {
 
 .find_hotel input:hover {
   background-color: #ebebeb;
-  border-style: none;
+  border: 2px solid transparent;
 }
 
 .find_hotel input:focus {
