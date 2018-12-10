@@ -6,7 +6,6 @@ body {
   text-transform: uppercase;
   text-align: center;
   font-weight: 400;
-  color: #333333;
   background-color: #ffffff;
 }
 
@@ -23,6 +22,10 @@ a {
 
 .visually_hidden {
   display: none;
+}
+
+.hotels {
+  margin-top: 64px;
 }
 
 /* inner_page of sedona >>> */
@@ -42,16 +45,16 @@ a {
 }
 
 .button {
-  display: table-cell;
+  display: inline-block;
   vertical-align: middle;
-  height: 27px;
   color: #ffffff;
   font-weight: bold;
+  line-height: 27px;
+  padding: 0px 17px;
 }
 
 .more {
   background-color: #81b3d2;
-  width: 110px;
 }
 
 .more:hover, .more:focus {
@@ -64,7 +67,6 @@ a {
 
 .book {
   background-color: #766357;
-  width: 142px;
 }
 
 .book:hover, .book:focus {
@@ -126,7 +128,10 @@ a {
 }
 
 .hotel_name {
+  text-align: left;
+  margin-bottom: 0;
   margin-top: 0;
+  line-height: 14px;
 }
 
 .rate_wrapper {
@@ -481,6 +486,7 @@ a {
 .rate_wrapper {
   order: 2;
   margin-left: auto;
+  margin-right: 72px;
 }
 
 .hotel_wrapper {
@@ -491,9 +497,6 @@ a {
   text-align: left;
 }
 
-.hotel_name {
-  text-align: left;
-}
 
 .main_header .logo {
   position: absolute;
@@ -505,4 +508,19 @@ a {
 
 .hotel_preview {
   order: -1;
+  margin-left: 72px;
+}
+
+ul.hotels_list {
+  padding: 0;
+  margin:0;
+
+}
+
+.hotel_description span {
+  color: rgba(0, 1, 1, 0.2);
+}
+
+.hotel_item .more {
+  margin-right: 6px;
 }
