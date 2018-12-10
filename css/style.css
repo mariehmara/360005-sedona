@@ -79,6 +79,7 @@ a {
 
 .rate {
   margin: 0;
+  margin-bottom: 3px;
   padding:0;
   width: 110px;
   height: 27px;
@@ -518,7 +519,7 @@ ul.hotels_list {
 }
 
 .hotel_description span {
-  color: rgba(0, 1, 1, 0.2);
+  color: #333;
 }
 
 .hotel_item .more {
