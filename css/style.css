@@ -326,18 +326,17 @@ a {
 /* flex elements part 1 */
 .nav {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   align-items: center;
   width: 1200px;
   padding: 0;
   margin: 0;
-  height: 56px;
+  min-height: 56px;
 }
 
 
 .nav li {
-  flex-basis: 25%;
+  flex-basis: 300px;
+  box-sizing: border-box;
 }
 
 .nav li:nth-child(3),
@@ -345,19 +344,19 @@ a {
   text-align: right;
 }
 
- .nav li:nth-child(4){
-  padding-right: 72px;
+.nav li:nth-child(4){
+ padding-right: 72px;
 }
 
-.nav li:first-child {
-    padding-left: 72px;
-}
 
 .nav li:first-child,
 .nav li:nth-child(2) {
     text-align: left;
 }
 
+.nav li:first-child {
+  padding-left: 72px;
+}
 .main_photo {
   min-height: 500px;
 }
