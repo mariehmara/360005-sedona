@@ -289,19 +289,6 @@ a {
   order: -1;
 }
 
-.form_find_hotel {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 568px;
-  margin-top: 55px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
-  box-shadow: 0 0 15px 0px rgba(0, 1, 1, 0.2);
-}
-
-
 .interested {
   font-size: 30px;
   line-height: 36px;
@@ -327,6 +314,21 @@ a {
 .search_head:active {
   background-color: #503e33;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.form_wrap .input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_find_hotel label
+ {
+  width: 112px;
+}
+.input_human.right label {
+  width: auto;
 }
 
 .find_hotel h3 {
@@ -377,7 +379,7 @@ fill: black;
 
 .input_human input {
   height: 38px;
-  width: 124px;
+  width: 114px;
 }
 .input_human .kids{
 margin-right: 0;
@@ -391,6 +393,7 @@ margin-right: 0;
   width: 1200px;
   margin-top:15px;
 }
+
 .find_hotel input:hover {
   background-color: #ebebeb;
   border: 2px solid transparent;
@@ -421,7 +424,6 @@ margin-right: 0;
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
 }
-
 
 .social_buttons {
   list-style: none;
@@ -467,6 +469,10 @@ margin-right: 0;
   display: inline-block;
   vertical-align: middle;
   margin-right: 132px;
+}
+
+.devops_link:hover .icon {
+  fill:#81b3d2;
 }
 
 /* flex elements part 1 */
@@ -523,6 +529,18 @@ margin-right: 0;
   margin-left: 132px;
 }
 
+.form_find_hotel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 568px;
+  margin-top: 55px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  box-shadow: 0 0 15px 0px rgba(0, 1, 1, 0.2);
+}
+
 .form_wrap p {
   margin: 0;
 }
@@ -537,13 +555,12 @@ margin-right: 0;
 
 .form_wrap {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   padding: 55px;
 }
 
 .input_human input {
-  margin-right: 20px;
   margin-left: 20px;
 }
 
