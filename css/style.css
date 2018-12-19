@@ -229,6 +229,7 @@ a {
   min-height: 256px;
   color: #ffffff;
 }
+
 .background_adv {
     height: 256px;
   background-image: url("..//img/sedona-1.jpg");
@@ -236,29 +237,56 @@ a {
   background-position: right;
     background-color: #81b3d2;
 }
+
 .advant_name {
   font-size: 21px;
   line-height: 21px;
 }
 
  .advant_text {
-  margin-bottom: 21px;
+  margin: 0;
+  margin-top: 21px;
 }
 
 .advant_list {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  justify-content: space-between;
+  align-items: baseline;
   width: 1200px;
   min-height: 300px;
   margin-bottom: 15px;
   background-color: white;
 }
-.list_1 {
-  position: relative;
+
+.advant_list div:first-child {
+  margin-left: 72px;
 }
-.list_1::before {
-  background-image: url("..//img/icon-1.svg");
+
+.advant_list div:last-child {
+  margin-right: 72px;
+}
+.list_1,
+.list_2,
+.list_3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.advant_list .advant_name {
+  margin: 0;
+  margin-top: 29px;
+}
+
+.advant_list .advant_text{
+  margin-top: 21px;
+}
+
+.advant_list .icon {
+  padding-top: 60px;
+  order: -1;
 }
 
 .form_find_hotel {
@@ -330,13 +358,18 @@ a {
 outline: none;
 border: 0;
 background-color: transparent;
+fill:#cacaca;
 }
 
-.input_date button:focus,
-.input_date button:hover {
+.button_date:focus .icon,
+.button_date:hover .icon{
 outline: none;
+fill: black;
 }
 
+.button_date:active .icon {
+  fill: #81b3d2;
+}
 .input_date input {
   width: 346px;
   height: 38px;
