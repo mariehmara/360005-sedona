@@ -375,6 +375,18 @@ fill: black;
   height: 38px;
 }
 
+.input_human input {
+  height: 38px;
+  width: 124px;
+}
+.input_human .kids{
+margin-right: 0;
+}
+
+.input_human p {
+  width: 225px;
+}
+
 .find_hotel {
   width: 1200px;
   margin-top:15px;
@@ -410,14 +422,6 @@ fill: black;
   color: rgba(255, 255, 255, 0.3);
 }
 
-.input_human input {
-  height: 38px;
-  width: 124px;
-}
-
-.input_human p {
-  width: 225px;
-}
 
 .social_buttons {
   list-style: none;
