@@ -204,31 +204,61 @@ a {
 
 .great_sedona {
   color: #333333;
+  margin-top: 38px;
+  margin-bottom: 56px;
 }
 
 .advantages {
-  position: relative;
   width: 1200px;
-  height: 256px;
-  background-color: #81b3d2;
-  background-image: url("..//img/sedona-1.jpg");
-  background-repeat: no-repeat;
-  background-position: right;
   margin: 0;
   padding: 0;
+  background-color: #81b3d2;
 }
 
 .true_city {
-  display: block;
-  position: absolute;
-  top:46px;
-  left: 60px;
+  display: flex;
+  height: 256px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing:border-box;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+  background-color: #81b3d2;
+  width: 400px;
+  min-height: 256px;
   color: #ffffff;
 }
-
-.true_city h3 {
+.background_adv {
+    height: 256px;
+  background-image: url("..//img/sedona-1.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+    background-color: #81b3d2;
+}
+.advant_name {
   font-size: 21px;
   line-height: 21px;
+}
+
+ .advant_text {
+  margin-bottom: 21px;
+}
+
+.advant_list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 1200px;
+  min-height: 300px;
+  margin-bottom: 15px;
+  background-color: white;
+}
+.list_1 {
+  position: relative;
+}
+.list_1::before {
+  background-image: url("..//img/icon-1.svg");
 }
 
 .form_find_hotel {
@@ -243,27 +273,18 @@ a {
   box-shadow: 0 0 15px 0px rgba(0, 1, 1, 0.2);
 }
 
-.find_hotel {
-  background-color: #ffffff;
-}
 
 .interested {
   font-size: 30px;
   line-height: 36px;
 }
 
-.choose_dates {
-  line-height: 24px;
-  text-align: center;
-}
 
 .search_head {
   text-transform: uppercase;
   font-weight: bold;
   width: 568px;
   height: 66px;
-  padding: 0;
-  margin: 0;
   background-color: #766357;
   font-size: 21px;
   color: #ffffff;
@@ -296,11 +317,35 @@ a {
   padding: 5px;
 }
 
+.input_date {
+  position: relative;
+}
+
+.input_date button {
+  position: absolute;
+  top:8px;
+  right: 8px;
+  margin: 0;
+  padding:0;
+outline: none;
+border: 0;
+background-color: transparent;
+}
+
+.input_date button:focus,
+.input_date button:hover {
+outline: none;
+}
+
 .input_date input {
   width: 346px;
   height: 38px;
 }
 
+.find_hotel {
+  width: 1200px;
+  margin-top:15px;
+}
 .find_hotel input:hover {
   background-color: #ebebeb;
   border: 2px solid transparent;
