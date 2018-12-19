@@ -214,12 +214,15 @@ a {
   background-image: url("..//img/sedona-1.jpg");
   background-repeat: no-repeat;
   background-position: right;
+  margin: 0;
+  padding: 0;
 }
 
 .true_city {
   display: block;
   position: absolute;
-  left: 25px;
+  top:46px;
+  left: 60px;
   color: #ffffff;
 }
 
