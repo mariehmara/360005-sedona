@@ -222,7 +222,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-sizing:border-box;
+  box-sizing: border-box;
   padding-bottom: 20px;
   background-color: #81b3d2;
   color: #ffffff;
@@ -246,13 +246,12 @@ a {
   background-color: #81b3d2;
 }
 
-
 .advant_name {
   font-size: 21px;
   line-height: 21px;
 }
 
- .advant_text {
+.advant_text {
   margin: 0;
   margin-top: 21px;
 }
@@ -289,13 +288,13 @@ a {
 .list_6 {
   margin-right: 77px;
 }
+
 .list_4,
 .list_5,
 .list_6 {
   padding-bottom: 64px;
   padding-top: 50px;
   box-sizing: border-box;
-
 }
 
 .list {
@@ -311,7 +310,7 @@ a {
   margin-top: 29px;
 }
 
-.advant_list .advant_text{
+.advant_list .advant_text {
   margin-top: 21px;
 }
 
@@ -324,7 +323,6 @@ a {
   font-size: 30px;
   line-height: 36px;
 }
-
 
 .search_head {
   text-transform: uppercase;
@@ -386,27 +384,28 @@ a {
 
 .input_date button {
   position: absolute;
-  top:8px;
+  top: 8px;
   right: 8px;
   margin: 0;
-  padding:0;
-outline: none;
-border: 0;
-background-color: transparent;
-fill:#cacaca;
+  padding: 0;
+  outline: none;
+  border: 0;
+  background-color: transparent;
+  fill: #cacaca;
 }
 
 .button_date:focus .icon,
-.button_date:hover .icon{
-outline: none;
-fill: black;
-cursor: pointer;
+.button_date:hover .icon {
+  outline: none;
+  fill: black;
+  cursor: pointer;
 }
 
 .button_date:active .icon {
   fill: #81b3d2;
   cursor: pointer;
 }
+
 .input_date input {
   width: 346px;
   height: 38px;
@@ -416,8 +415,9 @@ cursor: pointer;
   height: 38px;
   width: 114px;
 }
-.input_human .kids{
-margin-right: 0;
+
+.input_human .kids {
+  margin-right: 0;
 }
 
 .input_human p {
@@ -426,7 +426,7 @@ margin-right: 0;
 
 .find_hotel {
   width: 1200px;
-  margin-top:15px;
+  margin-top: 15px;
 }
 
 .find_hotel input:hover {
@@ -507,12 +507,13 @@ margin-right: 0;
 }
 
 .devops_link:hover .icon {
-  fill:#81b3d2;
+  fill: #81b3d2;
 }
 
 .devops_link:active .icon {
   fill: #bdbbbc;
 }
+
 /* flex elements part 1 */
 .nav {
   display: flex;
@@ -587,11 +588,13 @@ margin-right: 0;
   margin-bottom: 29px;
   text-align: left;
 }
+
 .form_wrap .input_human {
   margin-bottom: 0;
 }
+
 .form_wrap .find {
-margin-top: 56px;
+  margin-top: 56px;
 }
 
 .form_wrap {
@@ -600,7 +603,6 @@ margin-top: 56px;
   flex-wrap: wrap;
   padding: 55px;
 }
-
 
 .hotels_list {
   list-style: none;
@@ -676,9 +678,11 @@ margin-top: 56px;
 .first_column {
   margin-left: 72px;
 }
+
 .second_column {
   margin-left: 115px;
 }
+
 .choose_hotel ul {
   list-style: none;
 }
@@ -689,18 +693,18 @@ margin-top: 56px;
   position: relative;
   cursor: pointer;
   user-select: none;
-  margin-left: 40px;
+  padding-left: 40px;
 }
 
-.checkbox:checked + label::before {
-content: "";
-width: 27px;
-height: 23px;
-position: absolute;
-background-image: url("..//img/checkbox-on.svg");
-background-repeat:no-repeat;
-background-position: 0 0;
-right: 70px;
+.checkbox:checked+label::before {
+  content: "";
+  width: 27px;
+  height: 23px;
+  position: absolute;
+  background-image: url("..//img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 0px;
 }
 
 .choose_hotel {
@@ -756,6 +760,7 @@ right: 70px;
 .hotel_description {
   text-align: left;
 }
+
 .main_header {
   position: relative;
 }
