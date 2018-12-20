@@ -217,26 +217,35 @@ a {
 
 .true_city {
   display: flex;
-  height: 256px;
+  width: 400px;
+  min-height: 256px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   box-sizing:border-box;
   padding-bottom: 20px;
-  flex-wrap: wrap;
   background-color: #81b3d2;
-  width: 400px;
-  min-height: 256px;
   color: #ffffff;
 }
 
 .background_adv {
-    height: 256px;
+  min-height: 256px;
   background-image: url("..//img/sedona-1.jpg");
   background-repeat: no-repeat;
   background-position: right;
-    background-color: #81b3d2;
+  background-color: #81b3d2;
 }
+
+.background_adv_2 {
+  display: flex;
+  justify-content: flex-end;
+  min-height: 256px;
+  background-image: url("..//img/sedona-2.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: #81b3d2;
+}
+
 
 .advant_name {
   font-size: 21px;
@@ -254,7 +263,6 @@ a {
   align-items: baseline;
   width: 1200px;
   min-height: 300px;
-  margin-bottom: 15px;
   background-color: white;
 }
 
@@ -265,9 +273,26 @@ a {
 .advant_list div:last-child {
   margin-right: 72px;
 }
-.list_1,
-.list_2,
-.list_3 {
+
+.advant_list_2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 256px;
+}
+
+.list_4 {
+  margin-left: 95px;
+}
+.list_4,
+.list_5,
+.list_6 {
+  padding-bottom: 64px;
+  padding-top: 50px;
+  box-sizing: border-box;
+
+}
+.list {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -369,10 +394,12 @@ fill:#cacaca;
 .button_date:hover .icon{
 outline: none;
 fill: black;
+cursor: pointer;
 }
 
 .button_date:active .icon {
   fill: #81b3d2;
+  cursor: pointer;
 }
 .input_date input {
   width: 346px;
@@ -477,6 +504,9 @@ margin-right: 0;
   fill:#81b3d2;
 }
 
+.devops_link:active .icon {
+  fill: #bdbbbc;
+}
 /* flex elements part 1 */
 .nav {
   display: flex;
@@ -661,6 +691,9 @@ margin-top: 56px;
 
 .hotel_description {
   text-align: left;
+}
+.main_header {
+  position: relative;
 }
 
 .main_header .logo {
