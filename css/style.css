@@ -277,12 +277,17 @@ a {
 .advant_list_2 {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   min-height: 256px;
+  background-color: #eeeeee;
 }
 
 .list_4 {
   margin-left: 95px;
+}
+
+.list_6 {
+  margin-right: 77px;
 }
 .list_4,
 .list_5,
@@ -292,6 +297,7 @@ a {
   box-sizing: border-box;
 
 }
+
 .list {
   display: flex;
   flex-direction: column;
@@ -617,20 +623,13 @@ margin-top: 56px;
 .choose_hotel form {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  align-items: center;
   width: 1200px;
   min-height: 250px;
 }
 
 .choose_hotel .filter_range {
-  align-self: flex-start;
-  margin-left: 360px;
-  margin-right: 70px;
   width: 330px;
-}
-
-.choose_hotel ul {
-  list-style: none;
 }
 
 .price_controls {
@@ -646,6 +645,7 @@ margin-top: 56px;
   line-height: 38px;
   vertical-align: top;
   cursor: pointer;
+  text-align: left;
 }
 
 .price_controls .min_price,
@@ -654,11 +654,75 @@ margin-top: 56px;
   padding-left: 65px;
 }
 
+.infrastructure_list,
+.apartment_list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 105px;
+}
+
+.first_column legend,
+.second_column legend {
+  font-weight: bold;
+  font-size: 16px;
+  padding-bottom: 31px;
+}
+
+.first_column {
+  margin-left: 72px;
+}
+.second_column {
+  margin-left: 115px;
+}
+.choose_hotel ul {
+  list-style: none;
+}
+
+.first_column label,
+.second_column label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  margin-left: 40px;
+}
+
+.checkbox:checked + label::before {
+content: "";
+width: 27px;
+height: 23px;
+position: absolute;
+background-image: url("..//img/checkbox-on.svg");
+background-repeat:no-repeat;
+background-position: 0 0;
+right: 70px;
+}
+
+.choose_hotel {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.choose_hotel fieldset {
+  border: none;
+}
+
+.filter_range {
+  width: 330px;
+}
+
 .filter_range legend {
   margin-bottom: 9px;
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
+  text-align: left;
 }
 
 .found_wrapper {
