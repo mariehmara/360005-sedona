@@ -838,6 +838,7 @@ a {
   justify-content: flex-start;
   align-items: center;
   padding-left: 80px;
+  padding-right: 75px;
 }
 .found_wrapper p {
   margin-left: 50px;
@@ -855,6 +856,9 @@ a {
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #81b3d2;;
 }
+.arrows {
+  margin-left: auto;
+}
 .arrow {
   display: inline-block;
   width: 0;
@@ -863,11 +867,10 @@ a {
   border-left: 5px solid transparent;
 }
 .arrow_up {
-  margin-left: 425px;
   border-bottom: 10px solid #cacaca;
 }
 .arrow_down {
-margin-left: 12px;
+  margin-left: 12px;
   border-top: 10px solid #cacaca;
 }
 
