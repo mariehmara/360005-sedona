@@ -840,20 +840,19 @@ a {
   padding-left: 80px;
 }
 .found_wrapper p {
-  padding-left: 50px;
+  margin-left: 50px;
 }
 .found_wrapper a {
-  padding-left: 45px;
+  margin-left: 45px;
 }
 
-.found_wrapper a:nth-child(3) {
+.found_wrapper .clicked {
   color: #81b3d2;
 }
 
-.found_wrapper a:nth-child(4),
-.found_wrapper a:nth-child(5) {
+.found_wrapper .sort {
   color: rgba(0, 0, 0, 0.3);
-  text-decoration: underline;
+  border-bottom: 1px dotted #81b3d2;;
 }
 
 .hotel_item {
