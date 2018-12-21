@@ -766,6 +766,12 @@ a {
   padding-left: 40px;
 }
 
+.checkbox+label::before, {
+  display: none;
+}
+.checkbox+label::after {
+  display: inline-block;
+}
 
 .checkbox:checked+label::before {
   content: "";
@@ -778,9 +784,7 @@ a {
   top: -2px;
   left: 0px;
 }
-.checkbox:disabled+label::before {
-  display:none;
-}
+
 .checkbox:checked+label::after {
   display:none;
 }
