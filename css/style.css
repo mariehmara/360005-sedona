@@ -625,6 +625,7 @@ a {
 .choose_hotel form {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
   width: 1200px;
   min-height: 250px;
@@ -632,13 +633,91 @@ a {
 
 .choose_hotel .filter_range {
   width: 330px;
+  margin-left: 350px;
 }
 
 .price_controls {
+  position: relative;
   height: 36px;
   margin-bottom: 20px;
+  font-size: 0;
   border: 2px solid #ffffff;
   border-radius: 2px;
+}
+
+.price_controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+}
+
+.range_controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range_controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range_controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range_toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range_toggle_min {
+  left: 0;
+}
+
+.range_toggle_max {
+  left: 80%;
+}
+
+.range_toggle:hover {
+  background: #1c4f80;
+}
+
+.btn_transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn_transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
 }
 
 .price_controls label {
@@ -681,7 +760,7 @@ a {
 }
 
 .second_column {
-  margin-left: 115px;
+  margin-left: 70px;
 }
 
 .choose_hotel ul {
@@ -742,7 +821,16 @@ a {
   line-height: 21px;
   text-align: left;
 }
+.price_controls input {
+  width: 50px;
+  margin: 0;
 
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
 .found_wrapper {
   display: flex;
   justify-content: flex-start;
