@@ -356,6 +356,54 @@ a {
   width: 112px;
   font-weight: bold;
 }
+ .input_human input {
+   position: relative;
+ }
+
+ .adults::before {
+   position: absolute;
+   content:"";
+   width: 10px;
+   height: 2px;
+   background-color: black;
+ }
+
+.field_wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.field_wrap input {
+  position: relative;
+  text-align:center;
+    width: 114px;
+    min-height: 38px;
+    box-sizing: border-box;
+}
+
+.field_wrap .minus {
+  order: -1;
+}
+
+.field_wrap button {
+  position: absolute;
+}
+
+.field_wrap .plus {
+
+}
+
+.field_wrap .minus::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  width: 15px;
+  height: 2px;
+  background-color: #000000;
+
+}
 
 .input_human.right label {
   width: auto;
