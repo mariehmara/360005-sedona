@@ -612,16 +612,6 @@ a {
   font-size: 21px;
 }
 
-.found_wrapper p:nth-child(3) {
-  color: #81b3d2;
-}
-
-.found_wrapper p:nth-child(4),
-.found_wrapper p:nth-child(5) {
-  color: rgba(0, 0, 0, 0.3);
-  text-decoration: underline;
-}
-
 .choose_hotel form {
   display: flex;
   flex-direction: row;
@@ -776,6 +766,7 @@ a {
   padding-left: 40px;
 }
 
+
 .checkbox:checked+label::before {
   content: "";
   width: 27px;
@@ -786,6 +777,12 @@ a {
   background-position: 0 0;
   top: -2px;
   left: 0px;
+}
+.checkbox:disabled+label::before {
+  display:none;
+}
+.checkbox:checked+label::after {
+  display:none;
 }
 
 .checkbox+label::after {
@@ -831,14 +828,28 @@ a {
   background: none;
   border: none;
 }
+
 .found_wrapper {
   display: flex;
   justify-content: flex-start;
-  padding-left: 70px;
+  align-items: center;
+  padding-left: 80px;
+}
+.found_wrapper p {
+  padding-left: 50px;
+}
+.found_wrapper a {
+  padding-left: 45px;
 }
 
-.found_wrapper p {
-  padding-left: 45px;
+.found_wrapper a:nth-child(3) {
+  color: #81b3d2;
+}
+
+.found_wrapper a:nth-child(4),
+.found_wrapper a:nth-child(5) {
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: underline;
 }
 
 .hotel_item {
