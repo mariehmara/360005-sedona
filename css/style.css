@@ -370,40 +370,95 @@ a {
 
 .field_wrap {
   display: flex;
+    position: relative;
   justify-content: space-between;
   margin: 0;
   padding: 0;
 }
 
 .field_wrap input {
-  position: relative;
+
   text-align:center;
     width: 114px;
     min-height: 38px;
     box-sizing: border-box;
 }
 
-.field_wrap .minus {
-  order: -1;
-}
 
 .field_wrap button {
-  position: absolute;
+width:38px;
+height: 38px;
+background-color: transparent;
+outline: none;
+border: none;
 }
 
 .field_wrap .plus {
+    position: absolute;
+  right: 0;
+}
+
+.field_wrap .minus {
+    position: absolute;
+  left: 0;
+}
+
+.field_wrap .plus::before{
+  position: absolute;
+  content: "";
+  left: 50%;
+  margin-left:-6px;
+  top: 50% auto;
+  width: 12px;
+  height: 3px;
+  background-color: grey;
+
+}
+
+.field_wrap .plus::after {
+  position: absolute;
+  content: "";
+  right: 50%;
+  margin-right: -6px;
+  top: 50% auto;
+  width: 12px;
+  height: 3px;
+  background-color: grey;
+  transform: rotate(90deg);
 
 }
 
 .field_wrap .minus::after {
   position: absolute;
   content: "";
-  right: 0;
-  width: 15px;
-  height: 2px;
-  background-color: #000000;
+  right: 50%;
+  margin-right: -6px;
+  top: 50% auto;
+  width: 12px;
+  height: 3px;
+  background-color: grey;
 
 }
+.field_wrap .minus:hover::after,
+.field_wrap .minus:focus::after{
+  background-color: black;
+}
+
+.field_wrap .plus:hover::after,
+.field_wrap .plus:hover::before,
+.field_wrap .plus:focus::after,
+.field_wrap .plus:focus::before {
+    background-color: black;
+}
+
+.field_wrap .plus:active::after,
+.field_wrap .plus:active::before {
+  background-color: #81b3d2;
+  }
+
+  .field_wrap .minus:active::after{
+    background-color: #81b3d2;
+    }
 
 .input_human.right label {
   width: auto;
