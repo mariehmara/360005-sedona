@@ -861,14 +861,6 @@ a {
   padding-left: 40px;
 }
 
-.checkbox+label::before {
-  display: none;
-}
-
-.checkbox+label::after {
-  display: inline-block;
-}
-
 .checkbox:checked+label::before {
   content: "";
   width: 27px;
