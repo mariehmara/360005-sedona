@@ -21,8 +21,8 @@ a {
 }
 
 .visually_hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+input[type="checkbox"].visually_hidden,
+input[type="radio"].visually_hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -42,7 +42,7 @@ input[type="radio"].visually-hidden {
 /* inner_page of sedona >>> */
 .choose_hotel {
   background-image: url("../img/main-blurred.jpg");
-  background-position: center;
+  background-position: right top;
   background-repeat: no-repeat;
   background-color: #000000;
   background-size: cover;
@@ -728,7 +728,7 @@ input[type="radio"].visually-hidden {
   padding-top: 31px;
   padding-bottom: 31px;
   width: 1200px;
-  min-height: 250px;
+  min-height: 215px;
   padding-left: 72px;
   padding-right: 72px;
   box-sizing: border-box;
