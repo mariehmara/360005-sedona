@@ -39,6 +39,15 @@ input[type="radio"].visually_hidden {
   margin-top: 64px;
 }
 
+.map {
+  position: relative;
+  top:-395px;
+  z-index:-1;
+}
+
+.find_hotel form {
+  background-color: white;
+}
 /* inner_page of sedona >>> */
 .choose_hotel {
   background-image: url("../img/main-blurred.jpg");
