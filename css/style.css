@@ -20,8 +20,19 @@ a {
   color: #000000;
 }
 
-.visually_hidden {
-  display: none;
+.visually_hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .hotels {
@@ -34,6 +45,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-color: #000000;
+  background-size: cover;
 }
 
 .choose_hotel {
@@ -524,10 +536,6 @@ a {
   width: 225px;
 }
 
-.find_hotel {
-  width: 1200px;
-  margin-top: 15px;
-}
 
 .find_hotel input:hover {
   background-color: #ebebeb;
@@ -715,15 +723,20 @@ a {
 .choose_hotel form {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 31px;
+  padding-bottom: 31px;
   width: 1200px;
   min-height: 250px;
+  padding-left: 72px;
+  padding-right: 72px;
+  box-sizing: border-box;
 }
 
 .choose_hotel .filter_range {
   width: 330px;
-  margin-left: 350px;
+  margin-left: auto;
 }
 
 .price_controls {
@@ -824,36 +837,36 @@ a {
 .apartment_list {
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  min-height: 105px;
 }
 
-.first_column legend,
-.second_column legend {
+.infrastructure_list li,
+.apartment_list li {
+  margin-bottom: 36px;
+  text-align:left;
+}
+.infrastructure_list li:last-child,
+.apartment_list li:last-child {
+  margin-bottom: 0;
+}
+
+.filter_column {
+  margin:0;
+  margin-right: 115px;
+}
+
+.filter_column legend {
+  padding:0;
   font-weight: bold;
   font-size: 16px;
-  padding-bottom: 31px;
+  margin-bottom: 28px;
   text-align: left;
-}
-
-.first_column {
-  margin-left: 72px;
-}
-
-.second_column {
-  margin-left: 70px;
 }
 
 .choose_hotel ul {
   list-style: none;
 }
 
-.first_column label,
-.second_column label {
+.filter_column label {
   display: block;
   position: relative;
   cursor: pointer;
@@ -895,11 +908,6 @@ a {
   display: none;
 }
 
-.choose_hotel {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
 
 .choose_hotel fieldset {
   border: none;
@@ -910,6 +918,7 @@ a {
 }
 
 .filter_range legend {
+  padding: 0;
   margin-bottom: 9px;
   font-weight: 600;
   font-size: 16px;
