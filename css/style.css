@@ -833,21 +833,20 @@ input[type="radio"].visually-hidden {
   padding-left: 65px;
 }
 
-.infrastructure_list,
-.apartment_list {
+.checkbox_list {
   margin: 0;
   padding: 0;
 }
 
-.infrastructure_list li,
-.apartment_list li {
-  margin-bottom: 36px;
+.checkbox_list li {
+  margin-bottom: 23px;
   text-align:left;
 }
-.infrastructure_list li:last-child,
-.apartment_list li:last-child {
+
+.checkbox_list li:last-child{
   margin-bottom: 0;
 }
+
 
 .filter_column {
   margin:0;
@@ -911,6 +910,7 @@ input[type="radio"].visually-hidden {
 
 .choose_hotel fieldset {
   border: none;
+  padding: 0;
 }
 
 .filter_range {
