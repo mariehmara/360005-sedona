@@ -861,7 +861,8 @@ a {
   padding-left: 40px;
 }
 
-.checkbox:checked+label::before {
+.checkbox+label::before {
+  display: none;
   content: "";
   width: 27px;
   height: 23px;
@@ -873,11 +874,8 @@ a {
   left: 0px;
 }
 
-.checkbox:checked+label::after {
-  display: none;
-}
-
 .checkbox+label::after {
+  display:block;
   content: "";
   width: 27px;
   height: 23px;
@@ -887,6 +885,14 @@ a {
   background-position: 0 0;
   top: -2px;
   left: 0px;
+}
+
+.checkbox:checked+label::before {
+  display: block;
+}
+
+.checkbox:checked+label::after{
+  display: none;
 }
 
 .choose_hotel {
