@@ -147,6 +147,16 @@ input[type="radio"].visually_hidden {
   line-height: 14px;
 }
 
+.hotel_item img {
+  display: block;
+}
+
+.button_wrapper {
+  font-size: 0;
+}
+.button {
+  font-size: 14px;
+}
 .rate_wrapper {
   margin: 0;
   padding: 0;
