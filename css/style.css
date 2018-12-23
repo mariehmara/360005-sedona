@@ -41,13 +41,18 @@ input[type="radio"].visually_hidden {
 
 .map {
   position: relative;
-  top:-395px;
-  z-index:-1;
+  z-index: -1;
 }
 
 .find_hotel form {
   background-color: white;
+  height: 86px;
 }
+
+.form_wrap {
+  background-color: white;
+}
+
 /* inner_page of sedona >>> */
 .choose_hotel {
   background-image: url("../img/main-blurred.jpg");
@@ -163,9 +168,11 @@ input[type="radio"].visually_hidden {
 .button_wrapper {
   font-size: 0;
 }
+
 .button {
   font-size: 14px;
 }
+
 .rate_wrapper {
   margin: 0;
   padding: 0;
@@ -555,7 +562,6 @@ input[type="radio"].visually_hidden {
   width: 225px;
 }
 
-
 .find_hotel input:hover {
   background-color: #ebebeb;
   border: 2px solid transparent;
@@ -859,21 +865,20 @@ input[type="radio"].visually_hidden {
 
 .checkbox_list li {
   margin-bottom: 23px;
-  text-align:left;
+  text-align: left;
 }
 
-.checkbox_list li:last-child{
+.checkbox_list li:last-child {
   margin-bottom: 0;
 }
 
-
 .filter_column {
-  margin:0;
+  margin: 0;
   margin-right: 115px;
 }
 
 .filter_column legend {
-  padding:0;
+  padding: 0;
   font-weight: bold;
   font-size: 16px;
   margin-bottom: 28px;
@@ -906,7 +911,7 @@ input[type="radio"].visually_hidden {
 }
 
 .checkbox+label::after {
-  display:block;
+  display: block;
   content: "";
   width: 27px;
   height: 23px;
@@ -922,10 +927,9 @@ input[type="radio"].visually_hidden {
   display: block;
 }
 
-.checkbox:checked+label::after{
+.checkbox:checked+label::after {
   display: none;
 }
-
 
 .choose_hotel fieldset {
   border: none;
