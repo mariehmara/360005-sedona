@@ -739,28 +739,10 @@ input[type="radio"].visually_hidden {
   padding: 55px;
 }
 
-@keyframes bounce {
-  0% {
-    transform: translateY(-2000px);
-  }
-
-  70% {
-    transform: translateY(30px);
-  }
-
-  90% {
-    transform: translateY(-10px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
 .form_wrap_close {
   opacity: 0;
   pointer-events: none;
-  animation: bounce 5s;
+  transition: ease-out 0.3s;
 }
 
 .hotels_list {
