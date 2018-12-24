@@ -737,12 +737,12 @@ input[type="radio"].visually_hidden {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 55px;
+  transition: ease-out 0.3s;
 }
 
 .form_wrap_close {
   opacity: 0;
   pointer-events: none;
-  transition: ease-out 0.3s;
 }
 
 .hotels_list {
