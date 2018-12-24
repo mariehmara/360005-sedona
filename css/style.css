@@ -42,6 +42,8 @@ input[type="radio"].visually_hidden {
 .map {
   position: relative;
   z-index: -1;
+  background-color: #cbdda9;
+  background-image: url("..//img/map.jpg")
 }
 
 .find_hotel form {
@@ -51,6 +53,10 @@ input[type="radio"].visually_hidden {
 
 .form_wrap {
   background-color: white;
+}
+
+.form_wrap_close {
+  display: none;
 }
 
 /* inner_page of sedona >>> */
