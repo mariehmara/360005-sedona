@@ -289,11 +289,17 @@ input[type="radio"].visually_hidden {
 .advant_name {
   font-size: 21px;
   line-height: 21px;
+  width: 160px;
 }
 
 .advant_text {
   margin: 0;
   margin-top: 21px;
+  width: 285px;
+}
+
+.true_city p {
+  width: 305px;
 }
 
 .advant_list {
