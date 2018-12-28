@@ -249,7 +249,7 @@ input[type="radio"].visually_hidden {
 .great_sedona {
   color: #333333;
   margin: 30px auto;
-  margin-bottom: 50px;
+  margin-bottom: 55px;
   width: 490px;
 }
 
@@ -269,9 +269,9 @@ input[type="radio"].visually_hidden {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  padding-bottom: 20px;
   background-color: #81b3d2;
   color: #ffffff;
+  padding-bottom: 10px;
 }
 
 .background_adv {
@@ -296,12 +296,13 @@ input[type="radio"].visually_hidden {
   font-size: 21px;
   line-height: 21px;
   width: 150px;
+  margin: 0;
 }
 
 .advant_text {
   margin: 0;
-  margin-top: 21px;
-  width: 280px;
+  margin-top: 22px;
+  width: 290px;
 }
 
 .true_city p {
@@ -318,11 +319,11 @@ input[type="radio"].visually_hidden {
 }
 
 .advant_list div:first-child {
-  margin-left: 72px;
+  margin-left: 55px;
 }
 
 .advant_list div:last-child {
-  margin-right: 72px;
+  margin-right: 55px;
 }
 
 .advant_list_2 {
@@ -355,6 +356,7 @@ input[type="radio"].visually_hidden {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  padding-bottom: 80px;
 }
 
 .advant_list .advant_name {
@@ -362,12 +364,8 @@ input[type="radio"].visually_hidden {
   margin-top: 29px;
 }
 
-.advant_list .advant_text {
-  margin-top: 21px;
-}
-
 .advant_list .icon {
-  padding-top: 60px;
+  padding-top: 55px;
   order: -1;
 }
 
