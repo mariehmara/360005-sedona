@@ -41,7 +41,7 @@ input[type="radio"].visually_hidden {
 
 .map {
   position: relative;
-  z-index: -1;
+  z-index: 1;
   background-color: #cbdda9;
   background-image: url("..//img/map.jpg");
 }
@@ -53,6 +53,7 @@ input[type="radio"].visually_hidden {
 
 .form_wrap {
   background-color: white;
+  z-index: 2;
 }
 
 /* inner_page of sedona >>> */
@@ -210,6 +211,7 @@ input[type="radio"].visually_hidden {
 }
 
 .main_photo {
+  min-height: 500px;
   position: relative;
   background-image: url("../img/main-back.jpg");
   background-position: top;
@@ -237,22 +239,26 @@ input[type="radio"].visually_hidden {
 }
 
 .sedona_info {
-  font-size: 20px;
+  font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  width: 440px;
+  margin: 0 auto;
 }
 
 .great_sedona {
   color: #333333;
-  margin-top: 38px;
-  margin-bottom: 56px;
+  margin: 30px auto;
+  margin-bottom: 50px;
+  width: 490px;
 }
 
 .advantages {
   width: 1200px;
   margin: 0;
+  margin-top: 61px;
   padding: 0;
-  background-color: #81b3d2;
+  background-color: white;
 }
 
 .true_city {
@@ -289,13 +295,13 @@ input[type="radio"].visually_hidden {
 .advant_name {
   font-size: 21px;
   line-height: 21px;
-  width: 160px;
+  width: 150px;
 }
 
 .advant_text {
   margin: 0;
   margin-top: 21px;
-  width: 285px;
+  width: 280px;
 }
 
 .true_city p {
@@ -371,14 +377,16 @@ input[type="radio"].visually_hidden {
 }
 
 .search_head {
-  text-transform: uppercase;
-  font-weight: bold;
   width: 568px;
   height: 86px;
+  padding: 0;
   background-color: #766357;
   font-size: 21px;
   color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
   border: none;
+  outline: none;
 }
 
 .search_head:hover,
@@ -522,6 +530,9 @@ input[type="radio"].visually_hidden {
   outline: none;
   box-sizing: border-box;
   padding: 5px;
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
 }
 
 .input_date {
@@ -670,30 +681,29 @@ input[type="radio"].visually_hidden {
   box-sizing: border-box;
 }
 
-.nav li:nth-child(3),
-.nav li:nth-child(4) {
+.nav li:nth-child(3){
   text-align: right;
+  padding-right: 15px;
 }
 
 .nav li:nth-child(4) {
+  text-align: right;
   padding-right: 72px;
 }
 
-.nav li:first-child,
 .nav li:nth-child(2) {
   text-align: left;
+  padding-left: 15px;
 }
 
 .nav li:first-child {
+  text-align: left;
   padding-left: 72px;
 }
 
-.main_photo {
-  min-height: 500px;
-}
-
 .main_photo img {
-  margin-top: 60px;
+  margin-top: 75px;
+  margin-bottom: 75px;
 }
 
 .main_footer {
