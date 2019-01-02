@@ -249,7 +249,7 @@ input[type="radio"].visually_hidden {
 .great_sedona {
   color: #333333;
   margin: 30px auto;
-  margin-bottom: 55px;
+  margin-bottom: 53px;
   width: 490px;
 }
 
@@ -301,7 +301,7 @@ input[type="radio"].visually_hidden {
 
 .advant_text {
   margin: 0;
-  margin-top: 22px;
+  margin-top: 23px;
   width: 290px;
 }
 
@@ -316,6 +316,7 @@ input[type="radio"].visually_hidden {
   width: 1200px;
   min-height: 300px;
   background-color: white;
+  padding-bottom:30px;
 }
 
 .advant_list div:first-child {
@@ -333,20 +334,19 @@ input[type="radio"].visually_hidden {
   min-height: 256px;
   background-color: #eeeeee;
 }
-
-.list_4 {
-  margin-left: 95px;
+.advant_list_2 .advant_text {
+  width: 275px;
+}
+.advant_list_2 div:first-child {
+  margin-left: 63px;
+}
+.advant_list_2 div:last-child {
+  margin-right: 63px;
 }
 
-.list_6 {
-  margin-right: 77px;
-}
-
-.list_4,
-.list_5,
-.list_6 {
-  padding-bottom: 64px;
-  padding-top: 50px;
+.advant_list_2 {
+  padding-bottom: 60px;
+  padding-top: 45px;
   box-sizing: border-box;
 }
 
@@ -356,12 +356,11 @@ input[type="radio"].visually_hidden {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding-bottom: 80px;
 }
 
 .advant_list .advant_name {
   margin: 0;
-  margin-top: 29px;
+  margin-top: 30px;
 }
 
 .advant_list .icon {
@@ -372,6 +371,14 @@ input[type="radio"].visually_hidden {
 .interested {
   font-size: 30px;
   line-height: 36px;
+  margin-top: 55px;
+}
+
+.choose_dates {
+  color: #333333;
+  margin: 0;
+  height: 35px;
+  line-height: 24px;
 }
 
 .search_head {
@@ -514,13 +521,6 @@ input[type="radio"].visually_hidden {
   margin-right: 27px;
 }
 
-.find_hotel h3 {
-  font-weight: bold;
-}
-
-.find_hotel p {
-  color: #333333;
-}
 
 .find_hotel input {
   border: 2px solid transparent;
