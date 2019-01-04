@@ -248,15 +248,16 @@ input[type="radio"].visually_hidden {
 
 .great_sedona {
   color: #333333;
-  margin: 30px auto;
-  margin-bottom: 53px;
+  margin: 26px auto;
+  margin-bottom: 50px;
   width: 490px;
+  line-height: 26px;
 }
 
 .advantages {
   width: 1200px;
   margin: 0;
-  margin-top: 61px;
+  margin-top: 60px;
   padding: 0;
   background-color: white;
 }
@@ -301,7 +302,7 @@ input[type="radio"].visually_hidden {
 
 .advant_text {
   margin: 0;
-  margin-top: 23px;
+  margin-top: 21px;
   width: 290px;
 }
 
@@ -317,6 +318,10 @@ input[type="radio"].visually_hidden {
   min-height: 300px;
   background-color: white;
   padding-bottom:30px;
+}
+
+.advant_list .advant_text {
+  margin-top: 24px;
 }
 
 .advant_list div:first-child {
@@ -346,7 +351,7 @@ input[type="radio"].visually_hidden {
 
 .advant_list_2 {
   padding-bottom: 60px;
-  padding-top: 45px;
+  padding-top: 50px;
   box-sizing: border-box;
 }
 
@@ -371,13 +376,14 @@ input[type="radio"].visually_hidden {
 .interested {
   font-size: 30px;
   line-height: 36px;
-  margin-top: 55px;
+  margin-top: 53px;
+  margin-bottom: 21px;
 }
 
 .choose_dates {
   color: #333333;
   margin: 0;
-  height: 35px;
+  height: 40px;
   line-height: 24px;
 }
 
@@ -527,7 +533,7 @@ input[type="radio"].visually_hidden {
   background-color: #f2f2f2;
   outline: none;
   box-sizing: border-box;
-  padding: 5px;
+  padding: 10px;
   font-weight: 700;
   color: black;
   text-transform: uppercase;
@@ -596,8 +602,8 @@ input[type="radio"].visually_hidden {
   border: none;
   color: #ffffff;
   font-weight: bold;
-  letter-spacing: 1px;
   font-size: 21px;
+  outline: none;
 }
 
 .find button:hover, .find button:focus {
@@ -681,7 +687,7 @@ input[type="radio"].visually_hidden {
 
 .nav li:nth-child(3){
   text-align: right;
-  padding-right: 15px;
+  margin-right: 27px;
 }
 
 .nav li:nth-child(4) {
@@ -691,7 +697,7 @@ input[type="radio"].visually_hidden {
 
 .nav li:nth-child(2) {
   text-align: left;
-  padding-left: 15px;
+  margin-left: 22px;
 }
 
 .nav li:first-child {
@@ -700,7 +706,7 @@ input[type="radio"].visually_hidden {
 }
 
 .main_photo img {
-  margin-top: 75px;
+  margin-top: 76px;
   margin-bottom: 75px;
 }
 
@@ -736,6 +742,7 @@ input[type="radio"].visually_hidden {
 .form_wrap .input {
   margin-bottom: 29px;
   text-align: left;
+  line-height: 26px;
 }
 
 .form_wrap .input_human {
