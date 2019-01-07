@@ -211,7 +211,7 @@ input[type="radio"].visually_hidden {
 }
 
 .main_photo {
-  min-height: 500px;
+  min-height: 508px;
   position: relative;
   background-image: url("../img/main-back.jpg");
   background-position: top;
@@ -302,7 +302,7 @@ input[type="radio"].visually_hidden {
 
 .advant_text {
   margin: 0;
-  margin-top: 21px;
+  margin-top: 23px;
   width: 290px;
 }
 
@@ -317,7 +317,7 @@ input[type="radio"].visually_hidden {
   width: 1200px;
   min-height: 300px;
   background-color: white;
-  padding-bottom:30px;
+  padding-bottom: 30px;
 }
 
 .advant_list .advant_text {
@@ -339,12 +339,15 @@ input[type="radio"].visually_hidden {
   min-height: 256px;
   background-color: #eeeeee;
 }
+
 .advant_list_2 .advant_text {
   width: 275px;
 }
+
 .advant_list_2 div:first-child {
   margin-left: 63px;
 }
+
 .advant_list_2 div:last-child {
   margin-right: 63px;
 }
@@ -391,8 +394,8 @@ input[type="radio"].visually_hidden {
   width: 568px;
   height: 86px;
   padding: 0;
-  background-color: #766357;
   font-size: 21px;
+  background-color: #766357;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: bold;
@@ -526,7 +529,6 @@ input[type="radio"].visually_hidden {
   width: auto;
   margin-right: 27px;
 }
-
 
 .find_hotel input {
   border: 2px solid transparent;
@@ -685,7 +687,7 @@ input[type="radio"].visually_hidden {
   box-sizing: border-box;
 }
 
-.nav li:nth-child(3){
+.nav li:nth-child(3) {
   text-align: right;
   margin-right: 27px;
 }
