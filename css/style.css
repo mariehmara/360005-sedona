@@ -41,6 +41,9 @@ input[type="radio"].visually_hidden {
 }
 
 .map {
+  position: relative;
+  height: 0;
+  top: -474px;
   z-index: 1;
   background-color: #cbdda9;
   background-image: url("..//img/map.jpg");
@@ -51,13 +54,16 @@ input[type="radio"].visually_hidden {
 }
 
 .find_hotel form {
-  background-color: white;
-  height: 86px;
+  position: relative;
+  height: 560px;
 }
 
 .form_wrap {
+  position: absolute;
+  top: 86px;
   background-color: white;
   z-index: 2;
+  box-shadow: 0 1px 5px 1px rgba(0, 1, 1, 0.15);
 }
 
 /* inner_page of sedona >>> */
@@ -125,32 +131,23 @@ input[type="radio"].visually_hidden {
 .hotel_description span {
   color: #333333;
 }
-
-.stars_1 {
+.stars {
   margin: 0;
   padding: 0;
-  width: 70px;
   height: 17px;
   background-image: url("../img/star.svg");
   background-repeat: repeat;
+}
+.stars_1 {
+  width: 70px;
 }
 
 .stars_2 {
-  margin: 0;
-  padding: 0;
   width: 55px;
-  height: 17px;
-  background-image: url("../img/star.svg");
-  background-repeat: repeat;
 }
 
 .stars_3 {
-  margin: 0;
-  padding: 0;
   width: 35px;
-  height: 17px;
-  background-image: url("../img/star.svg");
-  background-repeat: repeat;
 }
 
 .hotel_name a:hover, .hotel_name a:focus {
@@ -395,6 +392,7 @@ input[type="radio"].visually_hidden {
 }
 
 .search_head {
+  position: relative;
   width: 568px;
   height: 86px;
   padding: 0;
@@ -405,6 +403,7 @@ input[type="radio"].visually_hidden {
   font-weight: bold;
   border: none;
   outline: none;
+  z-index: 5;
 }
 
 .search_head:hover,
@@ -479,7 +478,6 @@ input[type="radio"].visually_hidden {
   content: "";
   left: 50%;
   margin-left: -6px;
-  top: 50% auto;
   width: 12px;
   height: 3px;
   background-color: grey;
@@ -490,7 +488,6 @@ input[type="radio"].visually_hidden {
   content: "";
   right: 50%;
   margin-right: -6px;
-  top: 50% auto;
   width: 12px;
   height: 3px;
   background-color: grey;
@@ -502,7 +499,6 @@ input[type="radio"].visually_hidden {
   content: "";
   right: 50%;
   margin-right: -6px;
-  top: 50% auto;
   width: 12px;
   height: 3px;
   background-color: grey;
@@ -645,7 +641,6 @@ input[type="radio"].visually_hidden {
   margin-top: 5px;
 }
 
-
 .social_buttons a {
   display: flex;
   justify-content: center;
@@ -719,8 +714,8 @@ input[type="radio"].visually_hidden {
 
 .main_footer {
   display: flex;
-  position: absolute;
-  bottom: 10px;
+  position: relative;
+  bottom: 0;
   background-color: white;
   opacity: 0.9;
   z-index: 3;
@@ -750,7 +745,7 @@ input[type="radio"].visually_hidden {
   margin-left: auto;
   margin-right: auto;
   padding: 0;
-  box-shadow: 0 0 15px 0px rgba(0, 1, 1, 0.2);
+  overflow: hidden;
 }
 
 .form_wrap p {
@@ -772,14 +767,16 @@ input[type="radio"].visually_hidden {
 }
 
 .form_wrap {
+  transform: translateY(0px);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 55px;
-  transition: ease-out 0.3s;
+  transition: ease 0.3s;
 }
 
 .form_wrap_close {
+  transform: translateY(-395px);
   opacity: 0;
   pointer-events: none;
 }
@@ -797,27 +794,29 @@ input[type="radio"].visually_hidden {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 31px;
-  padding-bottom: 31px;
+  padding-top: 30px;
+  padding-bottom: 28px;
   width: 1200px;
   min-height: 215px;
   padding-left: 72px;
-  padding-right: 72px;
+  padding-right: 70px;
   box-sizing: border-box;
 }
 
 .choose_hotel .filter_range {
-  width: 330px;
+  width: 170px;
   margin-left: auto;
 }
 
 .price_controls {
   position: relative;
-  height: 36px;
+  width: 314px;
+  height: 32px;
   margin-bottom: 20px;
   font-size: 0;
   border: 2px solid #ffffff;
   border-radius: 2px;
+  text-align: left;
 }
 
 .price_controls::after {
@@ -876,7 +875,7 @@ input[type="radio"].visually_hidden {
   margin: 0 auto;
   padding: 6px 35px;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 21px;
   color: #ffffff;
   text-transform: uppercase;
   background: transparent;
@@ -890,19 +889,20 @@ input[type="radio"].visually_hidden {
   background: #ffffff;
 }
 
+.show_results {
+  width: 314px;
+}
+
 .price_controls label {
   display: inline-block;
   font-size: 14px;
-  line-height: 38px;
-  vertical-align: top;
+  line-height: 32px;
   cursor: pointer;
-  text-align: left;
+  margin-left: 65px;
 }
 
-.price_controls .min_price,
-.price_controls .max_price {
-  width: 90px;
-  padding-left: 65px;
+.price_controls label:nth-child(2) {
+  margin-left:70px;
 }
 
 .checkbox_list {
@@ -923,12 +923,14 @@ input[type="radio"].visually_hidden {
   margin: 0;
   margin-right: 115px;
 }
-
+.filter_column:nth-child(2) {
+  margin-left: 5px;
+}
 .filter_column legend {
   padding: 0;
   font-weight: bold;
   font-size: 16px;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
   text-align: left;
 }
 
@@ -938,6 +940,7 @@ input[type="radio"].visually_hidden {
 
 .filter_column label {
   display: block;
+  height: 23px;
   position: relative;
   cursor: pointer;
   user-select: none;
