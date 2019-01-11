@@ -160,10 +160,11 @@ input[type="radio"].visually_hidden {
 
 .hotel_name {
   text-align: left;
-  margin-bottom: 0;
-  margin-top: 0;
-  line-height: 14px;
+  margin: 0;
+  font-size: 21px;
+  line-height: 26px;
 }
+
 
 .hotel_item img {
   display: block;
@@ -786,6 +787,7 @@ input[type="radio"].visually_hidden {
 }
 
 .inner_page h1 {
+  margin:0;
   font-size: 21px;
 }
 
@@ -923,9 +925,11 @@ input[type="radio"].visually_hidden {
   margin: 0;
   margin-right: 115px;
 }
+
 .filter_column:nth-child(2) {
   margin-left: 5px;
 }
+
 .filter_column legend {
   padding: 0;
   font-weight: bold;
@@ -1012,27 +1016,36 @@ input[type="radio"].visually_hidden {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 80px;
+  padding-left: 72px;
   padding-right: 75px;
+  padding-top:31px;
 }
 
 .found_wrapper p {
-  margin-left: 50px;
+  margin:0;
+  margin-top:4px;
+  margin-left: 40px;
+  font-size:12px;
+  line-height:18px;
+  transform: scale(0.833);
+  margin-right: 5px;
 }
 
+
 .found_wrapper .sort {
-  margin-left: 45px;
+  margin:0;
+  margin-top:4px;
+  margin-left: 25px;
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #81b3d2;
+  font-size:12px;
+  line-height:18px;
+  transform: scale(0.833);
 }
 
 .found_wrapper .sort:active {
   color: #81b3d2;
   border: none;
-}
-
-.found_wrapper .sort {
-  color: rgba(0, 0, 0, 0.3);
-  border-bottom: 1px dotted #81b3d2;
-  ;
 }
 
 .arrows {
@@ -1076,9 +1089,8 @@ input[type="radio"].visually_hidden {
 
 .hotel_item {
   display: flex;
-  align-items: stretch;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   padding: 0;
 }
 
@@ -1089,11 +1101,15 @@ input[type="radio"].visually_hidden {
 }
 
 .hotel_wrapper {
-  margin-left: 25px;
+  margin-left: 30px;
 }
 
 .hotel_description {
-  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  width: 182px;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .main_header {
@@ -1124,4 +1140,10 @@ ul.hotels_list {
 
 .hotel_item .more {
   margin-right: 6px;
+}
+
+.hotel_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
