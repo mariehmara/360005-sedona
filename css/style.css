@@ -31,14 +31,12 @@ input[type="radio"].visually_hidden {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
-.hotels {
-  margin-top: 64px;
-}
 
 .map {
   position: relative;
@@ -67,19 +65,18 @@ input[type="radio"].visually_hidden {
 }
 
 /* inner_page of sedona >>> */
-.choose_hotel {
+
+.inner_page .choose_hotel {
   background-image: url("../img/main-blurred.jpg");
   background-position: right top;
   background-repeat: no-repeat;
   background-color: #000000;
   background-size: cover;
-}
-
-.choose_hotel {
   color: #ffffff;
 }
 
-.current {
+
+.inner_page .current {
   color: #766357;
 }
 
@@ -87,38 +84,38 @@ input[type="radio"].visually_hidden {
   display: inline-block;
   vertical-align: middle;
   color: #ffffff;
+  font-size: 14px;
   font-weight: bold;
   line-height: 27px;
   padding: 0px 17px;
 }
 
-.more {
+.inner_page .more {
   background-color: #81b3d2;
 }
 
-.more:hover, .more:focus {
+.inner_page .more:hover, .more:focus {
   background-color: #669ec0;
 }
 
-.more:active {
+.inner_page .more:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.book {
+.inner_page .book {
   background-color: #766357;
 }
 
-.book:hover, .book:focus {
+.inner_page .book:hover, .book:focus {
   background-color: #604e43;
 }
 
-.book:active {
+.inner_page .book:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.rate {
+.inner_page .rate {
   margin: 0;
-  margin-bottom: 3px;
   padding: 0;
   width: 110px;
   height: 27px;
@@ -128,26 +125,26 @@ input[type="radio"].visually_hidden {
   line-height: 27px;
 }
 
-.hotel_description span {
+.inner_page .hotel_description span {
   color: #333333;
 }
-.stars {
+.inner_page .stars {
   margin: 0;
   padding: 0;
   height: 17px;
   background-image: url("../img/star.svg");
-  background-repeat: repeat;
+  background-repeat: space;
 }
-.stars_1 {
-  width: 70px;
-}
-
-.stars_2 {
-  width: 55px;
+.inner_page .stars_1 {
+  width: 85px;
 }
 
-.stars_3 {
-  width: 35px;
+.inner_page .stars_2 {
+  width: 65px;
+}
+
+.inner_page .stars_3 {
+  width: 40px;
 }
 
 .hotel_name a:hover, .hotel_name a:focus {
@@ -162,7 +159,7 @@ input[type="radio"].visually_hidden {
   text-align: left;
   margin: 0;
   font-size: 21px;
-  line-height: 26px;
+  line-height: 18px;
 }
 
 
@@ -172,10 +169,6 @@ input[type="radio"].visually_hidden {
 
 .button_wrapper {
   font-size: 0;
-}
-
-.button {
-  font-size: 14px;
 }
 
 .rate_wrapper {
@@ -492,7 +485,8 @@ input[type="radio"].visually_hidden {
   width: 12px;
   height: 3px;
   background-color: grey;
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .field_wrap .minus::after {
@@ -768,7 +762,8 @@ input[type="radio"].visually_hidden {
 }
 
 .form_wrap {
-  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -777,7 +772,8 @@ input[type="radio"].visually_hidden {
 }
 
 .form_wrap_close {
-  transform: translateY(-395px);
+  -webkit-transform: translateY(-395px);
+          transform: translateY(-395px);
   opacity: 0;
   pointer-events: none;
 }
@@ -828,7 +824,8 @@ input[type="radio"].visually_hidden {
   left: 50%;
   width: 2px;
   height: 22px;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   background: #ffffff;
 }
 
@@ -947,7 +944,10 @@ input[type="radio"].visually_hidden {
   height: 23px;
   position: relative;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   padding-left: 40px;
 }
 
@@ -1019,6 +1019,7 @@ input[type="radio"].visually_hidden {
   padding-left: 72px;
   padding-right: 75px;
   padding-top:31px;
+  padding-bottom: 31px;
 }
 
 .found_wrapper p {
@@ -1027,7 +1028,8 @@ input[type="radio"].visually_hidden {
   margin-left: 40px;
   font-size:12px;
   line-height:18px;
-  transform: scale(0.833);
+  -webkit-transform: scale(0.833);
+          transform: scale(0.833);
   margin-right: 5px;
 }
 
@@ -1040,7 +1042,8 @@ input[type="radio"].visually_hidden {
   border-bottom: 1px dotted #81b3d2;
   font-size:12px;
   line-height:18px;
-  transform: scale(0.833);
+  -webkit-transform: scale(0.833);
+          transform: scale(0.833);
 }
 
 .found_wrapper .sort:active {
@@ -1054,6 +1057,7 @@ input[type="radio"].visually_hidden {
 
 .arrow {
   display: inline-block;
+  vertical-align: middle;
   width: 0;
   height: 0;
   border-right: 5px solid transparent;
@@ -1120,7 +1124,7 @@ input[type="radio"].visually_hidden {
   justify-content: space-between;
   width: 182px;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .main_header {
