@@ -1090,8 +1090,19 @@ input[type="radio"].visually_hidden {
 .hotel_item {
   display: flex;
   margin: 0;
-  margin-bottom: 60px;
   padding: 0;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+.hotel_item:nth-child(2) {
+  border: none;
+}
+
+.hotel_item:last-child {
+  margin: 0;
 }
 
 .rate_wrapper {
