@@ -156,12 +156,12 @@
         <p class="choose_dates">
           Укажите предполагаемые даты поездки,<br />и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <form action="//echo.htmlacademy.ru" method="post" class="form_find_hotel">
+        <form action="http://echo.htmlacademy.ru" method="post" class="form_find_hotel">
           <button type="button" name="search_head" class="search_head">ПОИСК ГОСТИНИЦЫ В седоне</button>
           <div class="form_wrap">
             <p class="input input_date">
               <label for="in_date">Дата заезда:</label>
-              <input type="text" class="in_date" name="in_date" id="in_date" placeholder="24 апреля 2017" required />
+              <input type="text" class="in_date" name="in_date" id="in_date" placeholder="24 апреля 2017" />
               <button type="button" class="button_date">
                 <svg class="icon" width="21" height="22">
                   <use xlink:href="#calendar"></use>
@@ -170,7 +170,7 @@
             </p>
             <p class="input input_date">
               <label for="out_date">Дата выезда:</label>
-              <input type="text" class="out_date" name="out_date" id="out_date" placeholder="4 июля 2017" required />
+              <input type="text" class="out_date" name="out_date" id="out_date" placeholder="4 июля 2017" />
               <button type="button" class="button_date">
                 <svg class="icon" width="21" height="22">
                   <use xlink:href="#calendar"></use>
@@ -234,30 +234,13 @@
       <p class="created_by">Website by
         <a href="//htmlacademy.ru" class="devops_link" aria-label="перейти на сайт разработчика">
           <svg class="icon" width="115" height="41">
-            <use xlink:href="#htmlacademy"></use>
+            <use xlink:href="https://htmlacademy.ru/intensive/htmlcss"></use>
           </svg>
         </a>
       </p>
     </footer>
   </div>
-  <script>
-    var button = document.querySelector(".search_head");
-    var form = document.querySelector(".form_wrap");
-    var datename = form.querySelector(".input");
-    form.addEventListener("submit", function(evt) {
-
-      if (!datename.value) {
-        evt.preventDefault();
-        console.log("Введите данные");
-      }
-    });
-    form.classList.add("form_wrap_close");
-
-    button.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      form.classList.toggle("form_wrap_close");
-    });
-  </script>
+  <script src="js/hotfind.js"></script>
 </body>
 
 </html>
