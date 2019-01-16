@@ -32,11 +32,10 @@ input[type="radio"].visually_hidden {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
 
 .map {
   position: relative;
@@ -48,7 +47,7 @@ input[type="radio"].visually_hidden {
 }
 
 .map iframe {
-    border: none;
+  border: none;
 }
 
 .find_hotel form {
@@ -65,7 +64,6 @@ input[type="radio"].visually_hidden {
 }
 
 /* inner_page of sedona >>> */
-
 .inner_page .choose_hotel {
   background-image: url("../img/main-blurred.jpg");
   background-position: right top;
@@ -74,7 +72,6 @@ input[type="radio"].visually_hidden {
   background-size: cover;
   color: #ffffff;
 }
-
 
 .inner_page .current {
   color: #766357;
@@ -128,6 +125,7 @@ input[type="radio"].visually_hidden {
 .inner_page .hotel_description span {
   color: #333333;
 }
+
 .inner_page .stars {
   margin: 0;
   padding: 0;
@@ -135,6 +133,7 @@ input[type="radio"].visually_hidden {
   background-image: url("../img/star.svg");
   background-repeat: space;
 }
+
 .inner_page .stars_1 {
   width: 85px;
 }
@@ -161,7 +160,6 @@ input[type="radio"].visually_hidden {
   font-size: 21px;
   line-height: 18px;
 }
-
 
 .hotel_item img {
   display: block;
@@ -486,7 +484,7 @@ input[type="radio"].visually_hidden {
   height: 3px;
   background-color: grey;
   -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .field_wrap .minus::after {
@@ -625,10 +623,11 @@ input[type="radio"].visually_hidden {
   font-weight: bold;
   font-size: 21px;
 }
+
 .created_by {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .created_by a {
@@ -657,7 +656,6 @@ input[type="radio"].visually_hidden {
 .social_buttons a:active {
   fill: rgba(255, 255, 255, 0.3);
 }
-
 
 .devops_link:hover .icon {
   fill: #81b3d2;
@@ -723,13 +721,12 @@ input[type="radio"].visually_hidden {
 
 .main_footer p,
 .main_footer ul {
-    width: 400px;
+  width: 400px;
 }
 
 .hash_tag {
   text-align: center;
 }
-
 
 .form_find_hotel {
   display: flex;
@@ -763,7 +760,7 @@ input[type="radio"].visually_hidden {
 
 .form_wrap {
   -webkit-transform: translateY(0px);
-          transform: translateY(0px);
+  transform: translateY(0px);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -773,7 +770,7 @@ input[type="radio"].visually_hidden {
 
 .form_wrap_close {
   -webkit-transform: translateY(-395px);
-          transform: translateY(-395px);
+  transform: translateY(-395px);
   opacity: 0;
   pointer-events: none;
 }
@@ -783,7 +780,7 @@ input[type="radio"].visually_hidden {
 }
 
 .inner_page h1 {
-  margin:0;
+  margin: 0;
   font-size: 21px;
 }
 
@@ -825,7 +822,7 @@ input[type="radio"].visually_hidden {
   width: 2px;
   height: 22px;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background: #ffffff;
 }
 
@@ -901,7 +898,7 @@ input[type="radio"].visually_hidden {
 }
 
 .price_controls label:nth-child(2) {
-  margin-left:70px;
+  margin-left: 70px;
 }
 
 .checkbox_list {
@@ -945,9 +942,9 @@ input[type="radio"].visually_hidden {
   position: relative;
   cursor: pointer;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   padding-left: 40px;
 }
 
@@ -1018,32 +1015,31 @@ input[type="radio"].visually_hidden {
   align-items: center;
   padding-left: 72px;
   padding-right: 75px;
-  padding-top:31px;
+  padding-top: 31px;
   padding-bottom: 31px;
 }
 
 .found_wrapper p {
-  margin:0;
-  margin-top:4px;
+  margin: 0;
+  margin-top: 4px;
   margin-left: 40px;
-  font-size:12px;
-  line-height:18px;
+  font-size: 12px;
+  line-height: 18px;
   -webkit-transform: scale(0.833);
-          transform: scale(0.833);
+  transform: scale(0.833);
   margin-right: 5px;
 }
 
-
 .found_wrapper .sort {
-  margin:0;
-  margin-top:4px;
+  margin: 0;
+  margin-top: 4px;
   margin-left: 25px;
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #81b3d2;
-  font-size:12px;
-  line-height:18px;
+  font-size: 12px;
+  line-height: 18px;
   -webkit-transform: scale(0.833);
-          transform: scale(0.833);
+  transform: scale(0.833);
 }
 
 .found_wrapper .sort:active {
@@ -1161,4 +1157,23 @@ ul.hotels_list {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+@keyframes a {
+  0%, to {
+    transform: translateX(0)
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px)
+  }
+
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px)
+  }
+}
+
+.submit_error {
+  animation-name: a;
+  animation-duration: 1s
 }
